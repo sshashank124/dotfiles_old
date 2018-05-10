@@ -1,0 +1,13 @@
+# /usr/share/libalpm/hooks/packages-list.hook
+
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Sync packages list
+When = PostTransaction
+Exec = {{ sh.run }} -c '[[ -x {{ env.XDG_CONFIG_HOME }}/system/packages/sync-packages.sh ]] && {{ env.XDG_CONFIG_HOME }}/system/packages/sync-packages.sh'

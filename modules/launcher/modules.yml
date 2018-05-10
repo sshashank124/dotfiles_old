@@ -1,0 +1,13 @@
+rofi:
+  requires:
+    - installed: rofi
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: rofi
+      to_section: launcher
+
+    compile:
+      - content: rofi/t.config
+        target: $XDG_CONFIG_HOME/rofi/config

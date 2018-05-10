@@ -1,0 +1,4 @@
+rofi:
+  name: rofi
+  run: j4-dmenu-desktop --no-generic --dmenu='rofi -i -dmenu -scroll-method 1 -p "App"'
+  menu: rofi -i -dmenu -scroll-method 1 -sep "|" -p

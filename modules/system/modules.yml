@@ -1,0 +1,27 @@
+systemd_state:
+  requires:
+    - installed: systemctl
+    - installed: scrot
+    - installed: magick
+
+  on_startup:
+    compile:
+      - content: systemd/state/t.change_state.sh
+        target: $XDG_CONFIG_HOME/system/state/change_state.sh
+      - content: systemd/state/t.lock.sh
+        target: $XDG_CONFIG_HOME/system/state/lock.sh
+
+    symlink:
+      - content: systemd/state/overlay.png
+        target: $XDG_CONFIG_HOME/system/state/overlay.png
+
+
+systemd_network:
+  requires:
+    - installed: systemctl
+    - installed: netctl-auto
+
+  on_startup:
+    compile:
+      - content: systemd/network/t.network.sh
+        target: $XDG_CONFIG_HOME/system/network/network.sh

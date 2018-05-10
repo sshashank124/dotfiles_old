@@ -1,0 +1,26 @@
+astrality:
+  hot_reload_config: true
+
+
+modules:
+  requires_timeout: 2
+  run_timeout: 2
+
+  reprocess_modified_files: true
+
+  modules_directory: modules
+  enabled_modules:
+    - name: colorscheme
+    - name: compositor::compton
+    - name: editor::neovim
+    - name: web::firefox
+    - name: launcher::rofi
+    - name: statusbar::polybar
+    - name: sh::zsh
+    - name: desktop::xorg
+    - name: wm::bspwm
+    - name: terminal::alacritty
+    - name: system::systemd_state
+    - name: system::systemd_network
+    - name: packages::arch
+    - name: vcs::git

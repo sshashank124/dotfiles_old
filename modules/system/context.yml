@@ -1,0 +1,5 @@
+system:
+  state:
+    menu: {{ env.XDG_CONFIG_HOME }}/system/state/change_state.sh
+  network:
+    menu: {{ env.XDG_CONFIG_HOME }}/system/network/network.sh

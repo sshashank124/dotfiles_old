@@ -1,0 +1,13 @@
+alacritty:
+  requires:
+    - installed: alacritty
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: alacritty
+      to_section: terminal
+
+    compile:
+      - content: alacritty/t.alacritty.yml
+        target: $XDG_CONFIG_HOME/alacritty/alacritty.yml

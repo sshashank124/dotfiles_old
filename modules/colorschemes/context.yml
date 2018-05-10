@@ -1,0 +1,318 @@
+# https://github.com/morhetz/gruvbox
+gruvbox_dark:
+  background:
+    1: '282828'
+    2: '3c3836'
+    3: '504945'
+    4: '665c54'
+
+  foreground:
+    1: 'fbf1c7'
+    2: 'ebdbb2'
+    3: 'd5c4a1'
+    4: 'bdae93'
+
+  accent: 'fe8019'
+
+  normal:
+    black:   '282828'
+    red:     'cc241d'
+    green:   '98971a'
+    yellow:  'd79921'
+    blue:    '458588'
+    magenta: 'b16286'
+    cyan:    '689d6a'
+    white:   'a89984'
+
+  bright:
+    black:   '928374'
+    red:     'fb4934'
+    green:   'b8bb26'
+    yellow:  'fabd2f'
+    blue:    '83a598'
+    magenta: 'd3869b'
+    cyan:    '8ec07c'
+    white:   'ebdbb2'
+
+gruvbox_light:
+  background:
+    1: 'fbf1c7'
+    2: 'ebdbb2'
+    3: 'd5c4a1'
+    4: 'bdae93'
+
+  foreground:
+    1: '3c3836'
+    2: '3c3836'
+    3: '504945'
+    4: '665c54'
+
+  accent: 'af3a03'
+
+  normal:
+    black:   'fbf1c7'
+    red:     'cc241d'
+    green:   '98971a'
+    yellow:  'd79921'
+    blue:    '458588'
+    magenta: 'b16286'
+    cyan:    '689d6a'
+    white:   'a89984'
+
+  bright:
+    black:   '928374'
+    red:     'fb4934'
+    green:   'b8bb26'
+    yellow:  'fabd2f'
+    blue:    '83a598'
+    magenta: 'd3869b'
+    cyan:    '8ec07c'
+    white:   'ebdbb2'
+
+# https://github.com/altercation/solarized
+solarized_dark:
+  background:
+    1: '002b36'
+    2: '073642'
+    3: '586e75'
+    4: '657b83'
+
+  foreground:
+    1: 'fdf6e3'
+    2: 'eee8d5'
+    3: '93a1a1'
+    4: '839496'
+
+  accent: '859900'
+
+  normal:
+    black:   '073642'
+    red:     'dc322f'
+    green:   '859900'
+    yellow:  'b58900'
+    blue:    '268bd2'
+    magenta: 'd33682'
+    cyan:    '2aa198'
+    white:   'eee8d5'
+
+  bright:
+    black:   '002b36'
+    red:     'cb4b16'
+    green:   '586e75'
+    yellow:  '657b83'
+    blue:    '839496'
+    magenta: '6c71c4'
+    cyan:    '93a1a1'
+    white:   'fdf6e3'
+
+solarized_light:
+  background:
+    1: 'fdf6e3'
+    2: 'eee8d5'
+    3: '93a1a1'
+    4: '839496'
+
+  foreground:
+    1: '002b36'
+    2: '073642'
+    3: '586e75'
+    4: '657b83'
+
+  accent: 'af005f'
+
+  normal:
+    black:   '073642'
+    red:     'dc322f'
+    green:   '859900'
+    yellow:  'b58900'
+    blue:    '268bd2'
+    magenta: 'd33682'
+    cyan:    '2aa198'
+    white:   'eee8d5'
+
+  bright:
+    black:   '002b36'
+    red:     'cb4b16'
+    green:   '586e75'
+    yellow:  '657b83'
+    blue:    '839496'
+    magenta: '6c71c4'
+    cyan:    '93a1a1'
+    white:   'fdf6e3'
+
+# https://github.com/WhiteAbeLincoln/base16-brushtrees-scheme
+brushtrees_dark:
+  background:
+    1: '485867'
+    2: '5a6d7a'
+    3: '6d828e'
+    4: '8299a1'
+
+  foreground:
+    1: 'e3efef'
+    2: 'c9dbdc'
+    3: 'b0c5c8'
+    4: '98afb5'
+
+  accent: '87b386'
+
+  normal:
+    black:   '485867'
+    red:     'b38686'
+    green:   '87b386'
+    yellow:  'd8bba2'
+    blue:    '86b3b3'
+    magenta: 'b386b2'
+    cyan:    '87b386'
+    white:   'e3efef'
+
+  bright:
+    black:   '485867'
+    red:     'b38686'
+    green:   '87b386'
+    yellow:  'd8bba2'
+    blue:    '86b3b3'
+    magenta: 'b386b2'
+    cyan:    '87b386'
+    white:   'e3efef'
+
+brushtrees_light:
+  background:
+    1: 'e3efef'
+    2: 'c9dbdc'
+    3: 'b0c5c8'
+    4: '98afb5'
+
+  foreground:
+    1: '485867'
+    2: '5a6d7a'
+    3: '6d828e'
+    4: '8299a1'
+
+  accent: 'b386b2'
+
+  normal:
+    black:   '485867'
+    red:     'b38686'
+    green:   '87b386'
+    yellow:  'd8bba2'
+    blue:    '86b3b3'
+    magenta: 'b386b2'
+    cyan:    '87b386'
+    white:   'e3efef'
+
+  bright:
+    black:   '485867'
+    red:     'b38686'
+    green:   '87b386'
+    yellow:  'd8bba2'
+    blue:    '86b3b3'
+    magenta: 'b386b2'
+    cyan:    '87b386'
+    white:   'e3efef'
+
+# https://github.com/chriskempson/base16-default-schemes/ocean.yaml
+ocean_dark:
+  background:
+    1: '2b303b'
+    2: '343d46'
+    3: '4f5b66'
+    4: '65737e'
+
+  foreground:
+    1: 'eff1f5'
+    2: 'dfe1e8'
+    3: 'c0c5ce'
+    4: 'a7adba'
+
+  accent: 'ebcb8b'
+
+  normal:
+    black:   '2b303b'
+    red:     'bf616a'
+    green:   'a3be8c'
+    yellow:  'ebcb8b'
+    blue:    '96b5b4'
+    magenta: 'b48ead'
+    cyan:    'd08770'
+    white:   'eff1f5'
+
+  bright:
+    black:   '2b303b'
+    red:     'bf616a'
+    green:   'a3be8c'
+    yellow:  'ebcb8b'
+    blue:    '96b5b4'
+    magenta: 'b48ead'
+    cyan:    'd08770'
+    white:   'eff1f5'
+
+ocean_light:
+  background:
+    1: 'eff1f5'
+    2: 'dfe1e8'
+    3: 'c0c5ce'
+    4: 'a7adba'
+
+  foreground:
+    1: '2b303b'
+    2: '343d46'
+    3: '4f5b66'
+    4: '65737e'
+
+  accent: 'bf616a'
+
+  normal:
+    black:   '2b303b'
+    red:     'bf616a'
+    green:   'a3be8c'
+    yellow:  'ebcb8b'
+    blue:    '96b5b4'
+    magenta: 'b48ead'
+    cyan:    'd08770'
+    white:   'eff1f5'
+
+  bright:
+    black:   '2b303b'
+    red:     'bf616a'
+    green:   'a3be8c'
+    yellow:  'ebcb8b'
+    blue:    '96b5b4'
+    magenta: 'b48ead'
+    cyan:    'd08770'
+    white:   'eff1f5'
+
+neon:
+  background:
+    1: '03001f'
+    2: '171736'
+    3: '262759'
+    4: '36377d'
+
+  foreground:
+    1: 'ededf7'
+    2: 'c9cae8'
+    3: 'a6a7d9'
+    4: '9495d1'
+
+  accent: 'fbfe75'
+
+  normal:
+    black:   '03001f'
+    red:     '802568'
+    green:   '15cac5'
+    yellow:  'fbfe75'
+    blue:    '094392'
+    magenta: 'b379f4'
+    cyan:    '37f6e4'
+    white:   'ededf7'
+
+  bright:
+    black:   '03001f'
+    red:     '802568'
+    green:   '15cac5'
+    yellow:  'fbfe75'
+    blue:    '094392'
+    magenta: 'b379f4'
+    cyan:    '37f6e4'
+    white:   'ededf7'

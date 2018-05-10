@@ -1,0 +1,17 @@
+xorg:
+  requires:
+    - installed: startx
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: xorg
+      to_section: desktop
+
+    compile:
+      - content: xorg/t.xinitrc
+        target: ~/.xinitrc
+
+    symlink:
+      - content: xorg/user-dirs.dirs
+        target: $XDG_CONFIG_HOME/user-dirs.dirs

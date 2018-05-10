@@ -1,0 +1,4 @@
+neovim:
+  name: nvim
+  run: nvim
+  diff: nvim -d

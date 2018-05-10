@@ -1,0 +1,6 @@
+colorscheme:
+  on_startup:
+    import_context:
+      from_path: modules/colorschemes/context.yml
+      from_section: gruvbox_dark
+      to_section: colors

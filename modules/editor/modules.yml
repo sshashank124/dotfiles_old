@@ -1,0 +1,13 @@
+neovim:
+  requires:
+    - installed: nvim
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: neovim
+      to_section: editor
+
+    symlink:
+      - content: neovim/init.vim
+        target: $XDG_CONFIG_HOME/nvim/init.vim

@@ -1,0 +1,20 @@
+fonts:
+  gui: Roboto
+  monospace: Meslo LG S
+  powerline: Meslo LG S for Powerline
+  icons: FontAwesome
+
+
+dimens:
+  border: 2
+  spacing: 10
+
+
+host:
+  user:
+    name: Shashank Singh
+    email: sshashank124@gmail.com
+
+  interfaces:
+    wlan: {{ "ls /sys/class/net | grep -o 'wl.*'" | shell }}
+    eth: {{ "ls /sys/class/net | grep -o 'en.*'" | shell }}

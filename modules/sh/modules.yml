@@ -1,0 +1,21 @@
+zsh:
+  requires:
+    - installed: zsh
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: zsh
+      to_section: sh
+
+    compile:
+      - content: zsh/t.zshenv
+        target: {{ env.HOME }}/.zshenv
+      - content: zsh/t.zprofile
+        target: {{ env.XDG_CONFIG_HOME }}/zsh/.zprofile
+      - content: zsh/t.aliasrc
+        target: {{ env.XDG_CONFIG_HOME }}/zsh/.aliasrc
+
+    symlink:
+      - content: zsh/.zshrc
+        target: {{ env.XDG_CONFIG_HOME }}/zsh/.zshrc

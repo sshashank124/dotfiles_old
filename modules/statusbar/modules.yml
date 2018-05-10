@@ -1,0 +1,17 @@
+polybar:
+  requires:
+    - installed: polybar
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: polybar
+      to_section: statusbar
+
+    compile:
+      - content: polybar/t.config
+        target: $XDG_CONFIG_HOME/polybar/config
+
+    symlink:
+      - content: polybar/player-mpris-tail.py
+        target: $XDG_CONFIG_HOME/polybar/player-mpris-tail.py

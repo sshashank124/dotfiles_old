@@ -1,0 +1,10 @@
+arch:
+  requires:
+    - installed: pacman
+
+  on_startup:
+    compile:
+      - content: arch/t.packages-list.hook
+        target: $XDG_CONFIG_HOME/system/packages/packages-list.hook
+      - content: arch/t.sync-packages.sh
+        target: $XDG_CONFIG_HOME/system/packages/sync-packages.sh

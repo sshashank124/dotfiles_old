@@ -1,0 +1,13 @@
+compton:
+  requires:
+    - installed: compton
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: compton
+      to_section: compositor
+
+    symlink:
+      - content: compton/compton.conf
+        target: $XDG_CONFIG_HOME/compton/compton.conf

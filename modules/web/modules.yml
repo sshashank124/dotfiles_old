@@ -1,0 +1,13 @@
+firefox:
+  requires:
+    - installed: firefox
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: firefox
+      to_section: web
+
+    compile:
+      - content: firefox/t.userChrome.css
+        target: ~/.mozilla/firefox/xbkwovvz.default/chrome/userChrome.css

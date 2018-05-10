@@ -1,0 +1,47 @@
+##### SHORTHANDS #####
+alias g='{{ vcs.run }}'
+alias x='unp' # extracting shortcut for unpacker
+alias o='xdg-open'
+alias p='pacaur'
+
+alias cb-copy='xclip -selection clipboard -in'
+alias cb-paste='xclip -selection clipboard -out'
+
+# other
+alias lines='wc -l'
+alias sz='du -sh'
+
+##### COLOR #####
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+
+##### DEFAULT FLAGS #####
+alias vim='{{ editor.run }}'
+
+alias f='feh --scale'
+
+alias l='ls -A --file-type'
+alias ll='l -lgGh'
+
+alias ghc='ghc -dynamic'
+
+alias optirun='optirun -b primus'
+
+# list contents when changing into directory
+chpwd() { l; }
+
+# safe aliases
+alias cp='cp -i'
+alias mv='mv -i'
+
+man() {
+  LESS_TERMCAP_mb=$'\e[01;31m' \
+  LESS_TERMCAP_md=$'\e[01;32m' \
+  LESS_TERMCAP_me=$'\e[0m' \
+  LESS_TERMCAP_se=$'\e[0m' \
+  LESS_TERMCAP_so=$'\e[01;34m' \
+  LESS_TERMCAP_ue=$'\e[0m' \
+  LESS_TERMCAP_us=$'\e[01;33m' \
+  command man "$@"
+}

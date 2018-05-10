@@ -1,0 +1,20 @@
+bspwm:
+  requires:
+    - installed: bspwm
+    - installed: sxhkd
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: bspwm
+      to_section: wm
+
+    compile:
+      - content: bspwm/t.bspwmrc
+        target: $XDG_CONFIG_HOME/bspwm/bspwmrc
+      - content: bspwm/t.sxhkdrc
+        target: $XDG_CONFIG_HOME/sxhkd/sxhkdrc
+
+    run:
+      - '[[ $(pidof bspwm) ]] && {{ env.XDG_CONFIG_HOME }}/bspwm/bspwmrc &'
+      - '[[ $(pidof sxhkd) ]] && pkill -USR1 -x sxhkd'
