@@ -15,3 +15,5 @@ xorg:
     symlink:
       - content: xorg/user-dirs.dirs
         target: $XDG_CONFIG_HOME/user-dirs.dirs
+      - content: xorg/meslo-powerline.ttf
+        target: $HOME/.fonts/meslo-powerline.ttf
