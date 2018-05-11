@@ -282,7 +282,7 @@ ocean_light:
     cyan:    'd08770'
     white:   'eff1f5'
 
-neon:
+night:
   background:
     1: '03001f'
     2: '171736'

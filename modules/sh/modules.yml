@@ -10,12 +10,12 @@ zsh:
 
     compile:
       - content: zsh/t.zshenv
-        target: {{ env.HOME }}/.zshenv
+        target: $HOME/.zshenv
       - content: zsh/t.zprofile
-        target: {{ env.XDG_CONFIG_HOME }}/zsh/.zprofile
+        target: $XDG_CONFIG_HOME/zsh/.zprofile
       - content: zsh/t.aliasrc
-        target: {{ env.XDG_CONFIG_HOME }}/zsh/.aliasrc
+        target: $XDG_CONFIG_HOME/zsh/.aliasrc
 
     symlink:
       - content: zsh/.zshrc
-        target: {{ env.XDG_CONFIG_HOME }}/zsh/.zshrc
+        target: $XDG_CONFIG_HOME/zsh/.zshrc

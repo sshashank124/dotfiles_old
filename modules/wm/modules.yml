@@ -12,9 +12,10 @@ bspwm:
     compile:
       - content: bspwm/t.bspwmrc
         target: $XDG_CONFIG_HOME/bspwm/bspwmrc
+        permissions: +x
       - content: bspwm/t.sxhkdrc
         target: $XDG_CONFIG_HOME/sxhkd/sxhkdrc
 
     run:
-      - shell: '[[ $(pidof bspwm) ]] && {{ env.XDG_CONFIG_HOME }}/bspwm/bspwmrc &'
-      - shell: '[[ $(pidof sxhkd) ]] && pkill -USR1 -x sxhkd &'
+      - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &
+      - shell: pkill -USR1 -x sxhkd &

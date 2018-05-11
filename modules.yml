@@ -2,5 +2,5 @@ colorscheme:
   on_startup:
     import_context:
       from_path: modules/colorschemes/context.yml
-      from_section: neon
+      from_section: night
       to_section: colors

@@ -61,7 +61,6 @@ libtool
 licenses
 linux
 logrotate
-lostfiles
 lvm2
 lxappearance
 lxrandr

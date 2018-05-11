@@ -8,3 +8,4 @@ arch:
         target: $XDG_CONFIG_HOME/system/packages/packages-list.hook
       - content: arch/t.sync-packages.sh
         target: $XDG_CONFIG_HOME/system/packages/sync-packages.sh
+        permissions: +x
