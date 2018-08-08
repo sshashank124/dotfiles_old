@@ -3,7 +3,7 @@ super + w
 	{{ terminal.run }}
 
 super + Return
-  {{ terminal.run }} --title "drop-in terminal"
+  {{ terminal.run }} --class "floating"
 
 # firefox
 super + q

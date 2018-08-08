@@ -29,7 +29,8 @@ bspc config presel_feedback_color  "#{{ colors.foreground.5 }}"
 [[ -z "$(pidof {{ statusbar.name }})" ]] && {{ statusbar.run }} &
 
 # set window rules
-bspc rule -a "*:drop-in terminal" state=floating center=on
+bspc rule -a "*:floating" state=floating center=on
 bspc rule -a feh state=floating center=on
 bspc rule -a Lxappearance state=floating center=on
 bspc rule -a Gpick state=floating center=on
+bspc rule -a Desmume state=pseudo_tiled

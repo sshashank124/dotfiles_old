@@ -54,6 +54,7 @@ intel-ucode
 iproute2
 iputils
 j4-dmenu-desktop
+jdk10-openjdk
 jfsutils
 jsoncpp
 less
@@ -82,9 +83,8 @@ pacaur
 pacman
 patch
 pciutils
-pcmciautils
 perl
-pkg-config
+pkgconf
 playerctl
 polybar
 primus
@@ -139,6 +139,7 @@ xorg-xev
 xorg-xinit
 xorg-xinput
 xorg-xkill
+xorg-xprop
 xorg-xrandr
 xorg-xsetroot
 yajl

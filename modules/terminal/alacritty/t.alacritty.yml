@@ -21,7 +21,7 @@ font:
     family: {{ fonts.powerline }}
     style: Italic
 
-  size: 12
+  size: 11
 
   use_thin_strokes: true  # OS X Retina displays
 
