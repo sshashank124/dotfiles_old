@@ -316,3 +316,73 @@ night:
     magenta: 'b379f4'
     cyan:    '37f6e4'
     white:   'ededf7'
+
+grayscale_dark:
+  background:
+    1: '101010'
+    2: '252525'
+    3: '424242'
+    4: '686868'
+
+  foreground:
+    1: 'f2f2f2'
+    2: 'dddddd'
+    3: 'aaaaaa'
+    4: '868686'
+
+  accent: 'ffffff'
+
+  normal:
+    black:   '101010'
+    red:     '802568'
+    green:   '15cac5'
+    yellow:  'fbfe75'
+    blue:    '094392'
+    magenta: 'b379f4'
+    cyan:    '37f6e4'
+    white:   'f2f2f2'
+
+  bright:
+    black:   '101010'
+    red:     '802568'
+    green:   '15cac5'
+    yellow:  'fbfe75'
+    blue:    '094392'
+    magenta: 'b379f4'
+    cyan:    '37f6e4'
+    white:   'f2f2f2'
+
+grayscale_light:
+  background:
+    1: 'f2f2f2'
+    2: 'dddddd'
+    3: 'aaaaaa'
+    4: '868686'
+
+  foreground:
+    1: '101010'
+    2: '252525'
+    3: '424242'
+    4: '686868'
+
+  accent: '000000'
+
+  normal:
+    black:   '101010'
+    red:     '802568'
+    green:   '15cac5'
+    yellow:  'fbfe75'
+    blue:    '094392'
+    magenta: 'b379f4'
+    cyan:    '37f6e4'
+    white:   'f2f2f2'
+
+  bright:
+    black:   '101010'
+    red:     '802568'
+    green:   '15cac5'
+    yellow:  'fbfe75'
+    blue:    '094392'
+    magenta: 'b379f4'
+    cyan:    '37f6e4'
+    white:   'f2f2f2'

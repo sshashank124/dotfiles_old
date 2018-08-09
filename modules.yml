@@ -2,5 +2,5 @@ colorscheme:
   on_startup:
     import_context:
       from_path: modules/colorschemes/context.yml
-      from_section: night
+      from_section: grayscale_dark
       to_section: colors
