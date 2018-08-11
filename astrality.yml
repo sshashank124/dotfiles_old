@@ -24,3 +24,4 @@ modules:
     - name: system::systemd_network
     - name: packages::arch
     - name: vcs::git
+    - name: security::gnupg

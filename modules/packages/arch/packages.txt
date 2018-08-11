@@ -22,7 +22,6 @@ device-mapper
 dhcpcd
 diffutils
 e2fsprogs
-evince
 expac
 fakeroot
 feh
@@ -145,6 +144,8 @@ xorg-xsetroot
 yajl
 youtube-dl
 z
+zathura
+zathura-pdf-mupdf
 zip
 zsh
 zsh-completions

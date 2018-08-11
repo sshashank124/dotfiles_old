@@ -1,0 +1,11 @@
+gnupg:
+  requires:
+    - installed: gpg
+
+  on_startup:
+    symlink:
+      - content: gnupg/gpg-agent.conf
+        target: $HOME/.gnupg/gpg-agent.conf
+
+    run:
+      - shell: killall gpg-agent
