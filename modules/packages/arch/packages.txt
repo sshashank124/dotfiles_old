@@ -105,6 +105,7 @@ python2
 redshift-minimal
 reiserfsprogs
 rofi
+rust
 scrot
 sed
 shadow

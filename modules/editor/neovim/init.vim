@@ -120,10 +120,6 @@ noremap ^ 0
 inoremap jk <esc>
 cnoremap jk <esc>
 
-" Replace {} and [] commands and change up/down order
-noremap <leader>j }
-noremap <leader>k {
-
 " make yank (Y) behavior similar to C and D
 nnoremap Y y$
 
@@ -140,33 +136,57 @@ noremap <a-w> :update<cr>
 noremap <a-q> :q<cr>
 
 " Window movement
-inoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
-inoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
-inoremap <a-j> <c-\><c-n>:call WinMove('j')<cr>
-inoremap <a-k> <c-\><c-n>:call WinMove('k')<cr>
+
+"" Creation and Navigation
 nnoremap <a-h> :call WinMove('h')<cr>
+inoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
+tnoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
+
 nnoremap <a-j> :call WinMove('j')<cr>
-nnoremap <a-k> :call WinMove('k')<cr>
-nnoremap <a-l> :call WinMove('l')<cr>
-tnoremap <a-l> <c-\><c-n>:call WinMove('l')<cr>
+inoremap <a-j> <c-\><c-n>:call WinMove('j')<cr>
 tnoremap <a-j> <c-\><c-n>:call WinMove('j')<cr>
+
+nnoremap <a-k> :call WinMove('k')<cr>
+inoremap <a-k> <c-\><c-n>:call WinMove('k')<cr>
 tnoremap <a-k> <c-\><c-n>:call WinMove('k')<cr>
+
+nnoremap <a-l> :call WinMove('l')<cr>
+inoremap <a-l> <c-\><c-n>:call WinMove('l')<cr>
 tnoremap <a-l> <c-\><c-n>:call WinMove('l')<cr>
 
+"" Resizing
+nnoremap <a-s-h> <c-w><
+inoremap <a-s-h> <c-\><c-n><c-w><i
+tnoremap <a-s-h> <c-\><c-n><c-w><i
+
+nnoremap <a-s-j> <c-w>+
+inoremap <a-s-j> <c-\><c-n><c-w>+i
+tnoremap <a-s-j> <c-\><c-n><c-w>+i
+
+nnoremap <a-s-k> <c-w>-
+inoremap <a-s-k> <c-\><c-n><c-w>-i
+tnoremap <a-s-k> <c-\><c-n><c-w>-i
+
+nnoremap <a-s-l> <c-w>>
+inoremap <a-s-l> <c-\><c-n><c-w>>i
+tnoremap <a-s-l> <c-\><c-n><c-w>>i
+
 " Buffer shortcuts
-inoremap <a-a> <c-\><c-n>:bp<cr>
-inoremap <a-s> <c-\><c-n>:bd<cr>
-inoremap <a-d> <c-\><c-n>:bn<cr>
 nnoremap <a-a> :bp<cr>
-nnoremap <a-s> :bd<cr>
-nnoremap <a-d> :bn<cr>
+inoremap <a-a> <c-\><c-n>:bp<cr>
 tnoremap <a-a> <c-\><c-n>:bp<cr>
+
+nnoremap <a-s> :bd<cr>
+inoremap <a-s> <c-\><c-n>:bd<cr>
 tnoremap <a-s> <c-\><c-n>:bd<cr>
+
+nnoremap <a-d> :bn<cr>
+inoremap <a-d> <c-\><c-n>:bn<cr>
 tnoremap <a-d> <c-\><c-n>:bn<cr>
 
 " Terminal
 noremap <a-cr> :terminal<cr>i
-" Always enter terminal in insert mode
+"" Always enter terminal in insert mode
 autocmd BufEnter term://* startinsert
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
