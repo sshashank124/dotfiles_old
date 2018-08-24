@@ -8,6 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 " Enable filetype plugins

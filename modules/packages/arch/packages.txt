@@ -123,6 +123,7 @@ ttf-dejavu
 ttf-font-awesome-4
 ttf-meslo
 ttf-roboto
+universal-ctags-git
 unp
 unzip
 usbutils
@@ -135,6 +136,7 @@ wpa_actiond
 xclip
 xfsprogs
 xorg-server
+xorg-server-xephyr
 xorg-xev
 xorg-xinit
 xorg-xinput
