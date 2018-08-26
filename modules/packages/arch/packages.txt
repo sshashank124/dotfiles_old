@@ -99,13 +99,13 @@ python-pandas
 python-pip
 python-scikit-learn
 python-tensorflow-opt-cuda
-python-virtualenvwrapper
 python-yaml
 python2
 redshift-minimal
 reiserfsprogs
 rofi
 rust
+rusty-tags
 scrot
 sed
 shadow
@@ -128,6 +128,7 @@ unp
 unzip
 usbutils
 util-linux
+valgrind
 vbam-wx
 wget
 which

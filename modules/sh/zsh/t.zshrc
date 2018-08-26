@@ -3,6 +3,9 @@ compinit
 
 bindkey -e
 
+##### PATH ##### 
+export PATH={{ env.HOME }}/bin:$PATH
+
 ##### HISTORY ##### 
 # History File
 HISTFILE="$ZDOTDIR/.history"
@@ -85,21 +88,8 @@ z_script='/usr/share/z/z.sh'
 [[ -r $z_script ]] && source $z_script
 unset z_script
 
-# Load virtualenvwrapper scripts
-source /usr/bin/virtualenvwrapper.sh
-
-# fzf
-#fzf_dir='/usr/share/fzf'
-#[[ -r $fzf_dir ]] && source $fzf_dir/completion.zsh && source $fzf_dir/key-bindings.zsh
-#unset fzf_dir
-
 # Temp fix for CtrlP overriding guicursor in neovim even when it's set to empty
 export VTE_VERSION=100
-
-# syntax highlighting
-#syntax_highlighting_plugin='/usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh'
-#[[ -r $syntax_highlighting_plugin ]] && source $syntax_highlighting_plugin
-#unset syntax_highlighting_plugin
 
 # Turn off legacy scroll locking
 stty -ixon

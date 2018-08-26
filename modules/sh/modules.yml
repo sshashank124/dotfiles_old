@@ -15,7 +15,5 @@ zsh:
         target: $XDG_CONFIG_HOME/zsh/.zprofile
       - content: zsh/t.aliasrc
         target: $XDG_CONFIG_HOME/zsh/.aliasrc
-
-    symlink:
-      - content: zsh/.zshrc
+      - content: zsh/t.zshrc
         target: $XDG_CONFIG_HOME/zsh/.zshrc

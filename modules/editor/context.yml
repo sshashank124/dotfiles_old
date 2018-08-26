@@ -1,4 +1,5 @@
 neovim:
   name: nvim
   run: nvim
+  type: vi
   diff: nvim -d

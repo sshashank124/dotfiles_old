@@ -192,6 +192,8 @@ autocmd BufEnter term://* startinsert
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags=./tags;/
+
 " ctrlp.vim
 let g:ctrlp_map = '<c-n>'
 let g:ctrlp_cmd = 'CtrlP'

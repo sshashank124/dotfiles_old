@@ -7,12 +7,6 @@ export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export EDITOR={{ editor.run }}
 export VISUAL={{ editor.run }}
 
-# virtualenvwrapper config
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/programming
-export VIRTUALENVWRAPPER_WORKON_CD=1
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
 # Android Studio gray screen on launch
 export _JAVA_AWT_WM_NONREPARENTING=1
 

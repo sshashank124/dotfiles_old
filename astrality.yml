@@ -25,3 +25,4 @@ modules:
     - name: packages::arch
     - name: vcs::git
     - name: security::gnupg
+    - name: programming::*
