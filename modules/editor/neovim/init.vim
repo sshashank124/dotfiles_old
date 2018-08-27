@@ -6,7 +6,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-vinegar'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 call plug#end()
 
@@ -16,8 +15,8 @@ filetype plugin indent on
 set splitbelow
 set splitright
 
-" Set 7 lines to the cursor - when moving vertically using j/k
-set scrolloff=5
+" Set 4 lines to the cursor - when moving vertically using j/k
+set scrolloff=4
 
 " Relative line numbers in margin
 set number relativenumber
@@ -128,15 +127,11 @@ nnoremap Q @q
 " Run macro on multiple selected lines
 vnoremap Q :norm @q<cr>
 
-" Simpler command mode
-nnoremap ; :
-
 " Save / quit
 noremap <a-w> :update<cr>
-noremap <a-q> :q<cr>
+noremap <a-q> :quit<cr>
 
 " Window movement
-
 "" Creation and Navigation
 nnoremap <a-h> :call WinMove('h')<cr>
 inoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
