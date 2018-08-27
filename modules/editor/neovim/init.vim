@@ -131,6 +131,14 @@ vnoremap Q :norm @q<cr>
 noremap <a-w> :update<cr>
 noremap <a-q> :quit<cr>
 
+" Tags
+set tags=./tags;/
+
+nnoremap gt g<c-]>
+vnoremap gt g<c-]>
+nnoremap gb <c-t>
+vnoremap gb <c-t>
+
 " Window movement
 "" Creation and Navigation
 nnoremap <a-h> :call WinMove('h')<cr>
@@ -187,8 +195,6 @@ autocmd BufEnter term://* startinsert
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set tags=./tags;/
-
 " ctrlp.vim
 let g:ctrlp_map = '<c-n>'
 let g:ctrlp_cmd = 'CtrlP'
