@@ -10,7 +10,7 @@ super + q
   {{ web.run }}
 
 # spotify
-super + m
+XF86Tools
 	spotify
 
 # mpv

@@ -21,7 +21,7 @@ font:
     family: {{ fonts.powerline }}
     style: Italic
 
-  size: 11
+  size: 8
 
   use_thin_strokes: true  # OS X Retina displays
 
@@ -78,7 +78,7 @@ dynamic_title: false
 
 hide_cursor_when_typing: true
 
-cursor_style: Underline
+cursor_style: Block
 
 live_config_reload: true
 
