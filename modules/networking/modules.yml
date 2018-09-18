@@ -1,0 +1,13 @@
+access_point:
+  requires:
+    - installed: create_ap
+    - installed: haveged
+
+  on_startup:
+    compile:
+      - content: access_point/t.access_point
+        target: $HOME/bin/access_point
+        permissions: +x
+
+    run:
+      - shell: systemctl restart create_ap

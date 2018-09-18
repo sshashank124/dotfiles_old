@@ -1,6 +1,10 @@
 window:
   decorations: false
 
+  dimensions:
+    columns: 80
+    lines: 24
+
   padding:
     x: {{ dimens.spacing }}
     y: {{ dimens.spacing }}
