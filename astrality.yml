@@ -26,4 +26,5 @@ modules:
     - name: packages::arch
     - name: vcs::git
     - name: security::gnupg
-    - name: programming::*
+    - name: programming/python::*
+    - name: programming/rust::*

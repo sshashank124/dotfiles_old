@@ -1,0 +1,9 @@
+virtualenvwrapper:
+  requires:
+    - installed: python
+    - installed: virtualenvwrapper.sh
+
+  on_startup:
+    symlink:
+      - content: virtualenvwrapper/.virtualenvwrapperrc
+        target: $HOME/bin/rc/.virtualenvwrapperrc

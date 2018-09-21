@@ -65,7 +65,6 @@ linux
 logrotate
 lvm2
 lxappearance
-lxrandr
 m4
 make
 man-db
@@ -101,6 +100,7 @@ python-pandas
 python-pip
 python-scikit-learn
 python-tensorflow-opt-cuda
+python-virtualenvwrapper
 python-yaml
 python2
 redshift-minimal

@@ -4,7 +4,7 @@ compinit
 bindkey -e
 
 ##### PATH ##### 
-export PATH={{ env.HOME }}/bin:$PATH
+export PATH=~/bin:$PATH
 
 ##### HISTORY ##### 
 # History File
@@ -87,6 +87,11 @@ unset alias_rc
 z_script='/usr/share/z/z.sh'
 [[ -r $z_script ]] && source $z_script
 unset z_script
+
+# custom rc files
+if [[ -d ~/bin/rc ]]; then
+  for rc_file in ~/bin/rc/*; source $rc_file
+fi
 
 # Temp fix for CtrlP overriding guicursor in neovim even when it's set to empty
 export VTE_VERSION=100

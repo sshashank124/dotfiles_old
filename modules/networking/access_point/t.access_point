@@ -1,1 +1,1 @@
-create_ap {{ host.interfaces.wlan }} {{ host.interfaces.eth }} phaqlow passwolqahp &
+create_ap -m bridge {{ host.interfaces.wlan }} {{ host.interfaces.eth }} phaqlow passwolqahp &

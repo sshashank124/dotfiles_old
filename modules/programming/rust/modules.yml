@@ -1,0 +1,24 @@
+rust:
+  requires:
+    - installed: cargo
+
+  on_startup:
+    symlink:
+      - content: .rustrc
+        target: $HOME/bin/rc/.rustrc
+
+
+rusty_tags:
+  requires:
+    - installed: cargo
+    - installed: rusty-tags
+
+  on_startup:
+    compile:
+      - content: rusty-tags/t.cargo-tags
+        target: $HOME/bin/cargo-tags
+        permissions: +x
+
+    symlink:
+      - content: rusty-tags/config.toml
+        target: $HOME/.rusty-tags/config.toml
