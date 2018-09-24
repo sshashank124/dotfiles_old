@@ -4,7 +4,6 @@
 
 # launch elements
 [[ $(command -v feh) ]] && feh --bg-scale --no-fehbg $XDG_CONFIG_HOME/wallpapers/wallpaper.jpg &
-[[ -z $(pidof {{ statusbar.name }}) ]] && {{ statusbar.run }} &
 
 # custom display startup scripts
 if [[ -d ~/bin/display_startup ]]; then

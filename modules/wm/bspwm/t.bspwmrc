@@ -24,6 +24,9 @@ bspc config active_border_color    "#{{ colors.foreground.4 }}"
 bspc config normal_border_color    "#{{ colors.background.2 }}"
 bspc config presel_feedback_color  "#{{ colors.foreground.5 }}"
 
+# launch statusbar
+[[ -z $(pidof {{ statusbar.name }}) ]] && {{ statusbar.run }} &
+
 # set window rules
 bspc rule -a "*:floating" state=floating center=on
 bspc rule -a feh state=floating center=on
