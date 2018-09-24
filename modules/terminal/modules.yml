@@ -12,6 +12,7 @@ alacritty:
       - content: alacritty/t.alacritty.yml
         target: $XDG_CONFIG_HOME/alacritty/alacritty.yml
 
+
 urxvt:
   requires:
     - installed: urxvt

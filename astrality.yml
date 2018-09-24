@@ -20,9 +20,8 @@ modules:
     - name: desktop::xorg
     - name: wm::bspwm
     - name: terminal::urxvt
-    - name: system::systemd_state
-    - name: system::systemd_network
-    - name: networking::*
+    - name: system::state
+    - name: networking::access_point
     - name: packages::arch
     - name: vcs::git
     - name: security::gnupg
