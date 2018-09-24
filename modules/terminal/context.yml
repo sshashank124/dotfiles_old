@@ -5,5 +5,5 @@ alacritty:
 
 urxvt:
   name: urxvt
-  run: urxvt
-  run_named: urxvt -name
+  run: urxvtc
+  run_named: urxvtc -name

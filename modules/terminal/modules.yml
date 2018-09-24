@@ -26,5 +26,10 @@ urxvt:
       - content: urxvt/t.Xresources
         target: $HOME/.Xresources
 
+    symlink:
+      - content: urxvt/daemon-urxvt
+        target: $HOME/bin/display_startup/daemon-urxvt
+        permissions: +x
+
     run:
       - shell: xrdb -merge $HOME/.Xresources

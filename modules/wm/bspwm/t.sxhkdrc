@@ -1,4 +1,4 @@
-# termite
+# terminal
 super + w
 	{{ terminal.run }}
 
