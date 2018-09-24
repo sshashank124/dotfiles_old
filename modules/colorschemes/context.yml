@@ -338,7 +338,7 @@ grayscale_dark:
     green:   '4caf50'
     yellow:  'ffff00'
     blue:    '1793D0'
-    magenta: 'ae81ff'
+    magenta: 'eb0e5d'
     cyan:    '00bcd4'
     white:   'f2f2f2'
 
@@ -348,7 +348,7 @@ grayscale_dark:
     green:   '4caf50'
     yellow:  'ffff00'
     blue:    '1793D0'
-    magenta: 'ae81ff'
+    magenta: 'eb0e5d'
     cyan:    '00bcd4'
     white:   'f2f2f2'
 
@@ -373,7 +373,7 @@ grayscale_light:
     green:   '4caf50'
     yellow:  'ffff00'
     blue:    '1793D0'
-    magenta: 'ae81ff'
+    magenta: 'eb0e5d'
     cyan:    '00bcd4'
     white:   'f2f2f2'
 
@@ -383,6 +383,6 @@ grayscale_light:
     green:   '4caf50'
     yellow:  'ffff00'
     blue:    '1793D0'
-    magenta: 'ae81ff'
+    magenta: 'eb0e5d'
     cyan:    '00bcd4'
     white:   'f2f2f2'
