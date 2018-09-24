@@ -64,6 +64,7 @@ linux
 logrotate
 lvm2
 lxappearance
+lxrandr
 m4
 make
 man-db

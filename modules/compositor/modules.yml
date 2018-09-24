@@ -11,3 +11,6 @@ compton:
     symlink:
       - content: compton/compton.conf
         target: $XDG_CONFIG_HOME/compton/compton.conf
+      - content: compton/daemon-compton
+        target: $HOME/bin/display_startup/daemon-compton
+        permissions: +x

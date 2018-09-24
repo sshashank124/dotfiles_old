@@ -1,3 +1,2 @@
 compton:
   name: compton
-  run: compton -b --config {{ env.XDG_CONFIG_HOME }}/compton/compton.conf
