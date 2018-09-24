@@ -3,7 +3,7 @@ super + w
 	{{ terminal.run }}
 
 super + Return
-  {{ terminal.run }} --class "floating"
+  {{ terminal.run_named }} "floating"
 
 # firefox
 super + q

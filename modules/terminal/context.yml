@@ -1,3 +1,9 @@
 alacritty:
   name: alacritty
   run: alacritty
+  run_named: alacritty -class
+
+urxvt:
+  name: urxvt
+  run: urxvt
+  run_named: urxvt -name

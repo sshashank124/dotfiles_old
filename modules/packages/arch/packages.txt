@@ -1,4 +1,3 @@
-alacritty-git
 alsa-utils
 android-studio
 arc-gtk-theme
@@ -108,6 +107,7 @@ reiserfsprogs
 rofi
 rust
 rusty-tags
+rxvt-unicode
 scrot
 sed
 shadow

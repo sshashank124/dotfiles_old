@@ -1,0 +1,30 @@
+URxvt*termName       : screen-256color
+URxvt*font           : xft:{{ fonts.powerline }}:size=12
+URxvt*scrollBar      : false
+URxvt*internalBorder : {{ dimens.spacing }}
+URxvt*letterSpace    : 0
+
+URxvt*perl-ext-common: "default, -searchable-scrollback"
+
+! Colors
+URxvt*background     :            #{{ colors.background.1 }}
+URxvt*foreground     :            #{{ colors.foreground.2 }}
+URxvt*cursorColor    :            #{{ colors.accent }}
+URxvt*highlightColor :            #{{ colors.foreground.4 }}
+
+URxvt*color0  :                   #{{ colors.normal.black }}
+URxvt*color1  :                   #{{ colors.normal.red }}
+URxvt*color2  :                   #{{ colors.normal.green }}
+URxvt*color3  :                   #{{ colors.normal.yellow }}
+URxvt*color4  :                   #{{ colors.normal.blue }}
+URxvt*color5  :                   #{{ colors.normal.magenta }}
+URxvt*color6  :                   #{{ colors.normal.cyan }}
+URxvt*color7  :                   #{{ colors.normal.white }}
+URxvt*color8  :                   #{{ colors.bright.black }}
+URxvt*color9  :                   #{{ colors.bright.red }}
+URxvt*color10 :                   #{{ colors.bright.green }}
+URxvt*color11 :                   #{{ colors.bright.yellow }}
+URxvt*color12 :                   #{{ colors.bright.blue }}
+URxvt*color13 :                   #{{ colors.bright.magenta }}
+URxvt*color14 :                   #{{ colors.bright.cyan }}
+URxvt*color15 :                   #{{ colors.bright.white }}

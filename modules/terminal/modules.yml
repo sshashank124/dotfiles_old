@@ -11,3 +11,20 @@ alacritty:
     compile:
       - content: alacritty/t.alacritty.yml
         target: $XDG_CONFIG_HOME/alacritty/alacritty.yml
+
+urxvt:
+  requires:
+    - installed: urxvt
+
+  on_startup:
+    import_context:
+      from_path: context.yml
+      from_section: urxvt
+      to_section: terminal
+
+    compile:
+      - content: urxvt/t.Xresources
+        target: $HOME/.Xresources
+
+    run:
+      - shell: xrdb -merge $HOME/.Xresources

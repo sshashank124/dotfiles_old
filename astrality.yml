@@ -19,7 +19,7 @@ modules:
     - name: sh::zsh
     - name: desktop::xorg
     - name: wm::bspwm
-    - name: terminal::alacritty
+    - name: terminal::urxvt
     - name: system::systemd_state
     - name: system::systemd_network
     - name: networking::*
