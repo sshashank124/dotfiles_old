@@ -1,9 +1,6 @@
-# desktop settings
+# Xorg settings
 [[ $(command -v xsetroot) ]] && xsetroot -cursor_name left_ptr
 [[ $(command -v setxkbmap) ]] && setxkbmap -option ctrl:nocaps
-
-# launch elements
-[[ $(command -v feh) ]] && feh --bg-scale --no-fehbg $XDG_CONFIG_HOME/wallpapers/wallpaper.jpg &
 
 # custom display startup scripts
 if [[ -d ~/bin/display_startup ]]; then

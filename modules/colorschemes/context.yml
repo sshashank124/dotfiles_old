@@ -299,22 +299,22 @@ night:
 
   normal:
     black:   '03001f'
-    red:     '802568'
-    green:   '15cac5'
-    yellow:  'fbfe75'
-    blue:    '094392'
-    magenta: 'b379f4'
-    cyan:    '37f6e4'
+    red:     'f44336'
+    green:   '4caf50'
+    yellow:  'ffff00'
+    blue:    '1793D0'
+    magenta: 'eb0e5d'
+    cyan:    '00bcd4'
     white:   'ededf7'
 
   bright:
     black:   '03001f'
-    red:     '802568'
-    green:   '15cac5'
-    yellow:  'fbfe75'
-    blue:    '094392'
-    magenta: 'b379f4'
-    cyan:    '37f6e4'
+    red:     'f44336'
+    green:   '4caf50'
+    yellow:  'ffff00'
+    blue:    '1793D0'
+    magenta: 'eb0e5d'
+    cyan:    '00bcd4'
     white:   'ededf7'
 
 grayscale_dark:

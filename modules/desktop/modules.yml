@@ -17,3 +17,5 @@ xorg:
         target: $XDG_CONFIG_HOME/user-dirs.dirs
       - content: xorg/meslo-powerline.ttf
         target: $HOME/.fonts/meslo-powerline.ttf
+      - content: xorg/set_wallpaper
+        target: $HOME/bin/display_startup/set_wallpaper

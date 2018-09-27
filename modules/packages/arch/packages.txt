@@ -113,6 +113,7 @@ scrot
 sed
 shadow
 spotify
+sqlitebrowser
 stow
 sudo
 sxhkd

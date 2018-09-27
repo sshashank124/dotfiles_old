@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+[[ $(command -v feh) ]] && feh --bg-scale --no-fehbg $XDG_CONFIG_HOME/wallpapers/wallpaper.jpg &
