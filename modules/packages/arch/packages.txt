@@ -12,11 +12,13 @@ bison
 bspwm
 bumblebee
 bzip2
+checkbashisms
 compton
 coreutils
 cower
 create_ap
 cryptsetup
+dash
 desmume
 device-mapper
 dhcpcd

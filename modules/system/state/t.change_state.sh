@@ -2,7 +2,7 @@
 states="Lock|Suspend|Logout|Shutdown|Restart"
 res=$(echo "$states" | {{ launcher.menu }} "System")
 
-sleep 0.2
+sleep 1
 
 case "$res" in
   Shutdown) sudo systemctl poweroff ;;
