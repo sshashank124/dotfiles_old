@@ -12,6 +12,7 @@ bison
 bspwm
 bumblebee
 bzip2
+checkbashisms
 compton
 coreutils
 cower
