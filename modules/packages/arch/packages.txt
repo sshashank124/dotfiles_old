@@ -1,5 +1,4 @@
 alsa-utils
-android-studio
 arc-gtk-theme
 astrality-git
 asus-kbd-backlight
@@ -47,18 +46,17 @@ gtkglext
 gzip
 haveged
 hdf5
+htop
 i3lock
 ifplugd
 imagemagick
 inetutils
-inkscape
 intel-ucode
 iproute2
 iputils
 j4-dmenu-desktop
 jdk10-openjdk
 jfsutils
-jsoncpp
 less
 libtool
 licenses
@@ -78,6 +76,7 @@ neovim
 netctl
 nmap
 nvidia
+openconnect
 opencv
 openssh
 p7zip
@@ -105,7 +104,6 @@ python-tensorflow-opt-cuda
 python-virtualenvwrapper
 python-yaml
 python2
-redshift-minimal
 reiserfsprogs
 rofi
 rust

@@ -5,8 +5,8 @@ import sys
 import subprocess
 
 import gi
-from gi.repository import Playerctl, GLib
 gi.require_version('Playerctl', '1.0')
+from gi.repository import Playerctl, GLib
 
 MUSIC_ICON = ''
 PAUSE_ICON = ''

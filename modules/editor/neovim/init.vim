@@ -24,6 +24,13 @@ set number relativenumber
 " Show current line
 set cursorline
 hi CursorLine cterm=NONE ctermbg=darkgray
+augroup CursorLine
+    au!
+    au VimEnter * setlocal cursorline
+    au WinEnter * setlocal cursorline
+    au BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc

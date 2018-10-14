@@ -11,11 +11,9 @@ modules:
   modules_directory: modules
   enabled_modules:
     - name: colorscheme
-    - name: compositor::compton
     - name: editor::neovim
     - name: web::firefox
     - name: launcher::rofi
-    - name: statusbar::polybar
     - name: sh::zsh
     - name: desktop::xorg
     - name: wm::bspwm

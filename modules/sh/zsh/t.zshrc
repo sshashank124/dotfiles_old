@@ -78,6 +78,8 @@ bindkey '^[n' history-beginning-search-forward
 WORDCHARS=${WORDCHARS//[\/\=_]}
 
 ##### MISC #####
+KEYTIMEOUT=1
+
 # Load aliases
 alias_rc="$ZDOTDIR/.aliasrc"
 [[ -r $alias_rc ]] && source $alias_rc
