@@ -12,7 +12,6 @@ bspwm
 bumblebee
 bzip2
 checkbashisms
-compton
 coreutils
 cower
 create_ap
@@ -87,7 +86,6 @@ pciutils
 perl
 pkgconf
 playerctl
-polybar
 primus
 procps-ng
 psmisc

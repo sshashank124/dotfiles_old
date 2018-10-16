@@ -7,6 +7,7 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Enable filetype plugins
@@ -23,7 +24,7 @@ set number relativenumber
 
 " Show current line
 set cursorline
-hi CursorLine cterm=NONE ctermbg=darkgray
+hi CursorLine term=bold cterm=bold ctermbg=darkgray
 augroup CursorLine
     au!
     au VimEnter * setlocal cursorline
@@ -111,7 +112,7 @@ set background=dark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Spacebar for <leader> key
+" <space> as leader
 let mapleader = " "
 
 " Treat long lines as break lines (useful when moving around in them)
@@ -135,16 +136,16 @@ nnoremap Q @q
 vnoremap Q :norm @q<cr>
 
 " Save / quit
-noremap <a-w> :update<cr>
-noremap <a-q> :quit<cr>
+nnoremap <a-w> :update<cr>
+nnoremap <a-q> :quit<cr>
 
 " Tags
 set tags=./tags;/
 
 nnoremap gt g<c-]>
-vnoremap gt g<c-]>
 nnoremap gb <c-t>
-vnoremap gb <c-t>
+nnoremap gn :tnext<cr>
+nnoremap gp :tprev<cr>
 
 " Window movement
 "" Creation and Navigation
@@ -195,7 +196,7 @@ inoremap <a-d> <c-\><c-n>:bn<cr>
 tnoremap <a-d> <c-\><c-n>:bn<cr>
 
 " Terminal
-noremap <a-cr> :terminal<cr>i
+nnoremap <a-cr> :terminal<cr>i
 "" Always enter terminal in insert mode
 autocmd BufEnter term://* startinsert
 
@@ -210,6 +211,10 @@ let g:ctrlp_show_hidden = 1
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+" vim-easymotion
+map f <Plug>(easymotion-sl)
 
 " Disable neovim plugin providers
 let g:loaded_python_provider = 1
