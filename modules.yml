@@ -2,5 +2,5 @@ colorscheme:
   on_startup:
     import_context:
       from_path: modules/colorschemes/context.yml
-      from_section: ocean_dark
+      from_section: cyberpunk
       to_section: colors

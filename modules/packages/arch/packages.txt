@@ -102,6 +102,7 @@ python-tensorflow-opt-cuda
 python-virtualenvwrapper
 python-yaml
 python2
+qutebrowser
 reiserfsprogs
 rofi
 rust

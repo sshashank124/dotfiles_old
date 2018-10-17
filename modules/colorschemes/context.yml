@@ -386,3 +386,112 @@ grayscale_light:
     magenta: 'eb0e5d'
     cyan:    '00bcd4'
     white:   'f2f2f2'
+
+
+# https://github.com/arcticicestudio/nord
+nord:
+  background:
+    1: '2e3440'
+    2: '3b4252'
+    3: '434c5e'
+    4: '4c566a'
+
+  foreground:
+    1: 'eceff4'
+    2: 'eceff4'
+    3: 'e5e9f0'
+    4: 'd8dee9'
+
+  accent: 'd8dee9'
+
+  normal:
+    black:   '3b4252'
+    red:     'bf616a'
+    green:   'a3be8c'
+    yellow:  'ebcb8b'
+    blue:    '81a1c1'
+    magenta: 'b48ead'
+    cyan:    '88c0d0'
+    white:   'e5e9f0'
+
+  bright:
+    black:   '4c566a'
+    red:     'bf616a'
+    green:   'a3be8c'
+    yellow:  'ebcb8b'
+    blue:    '81a1c1'
+    magenta: 'b48ead'
+    cyan:    '8fbcbb'
+    white:   'eceff4'
+
+
+autumn:
+  background:
+    1: '0a0b10'
+    2: '1d212f'
+    3: '30374f'
+    4: '444c6f'
+
+  foreground:
+    1: 'eec6a6'
+    2: 'e7ad7e'
+    3: 'de9254'
+    4: 'd67729'
+
+  accent: 'f79826'
+
+  normal:
+    black:   '0a0b10'
+    red:     'db200e'
+    green:   'ea5d1d'
+    yellow:  '9f5f5b'
+    blue:    'be5d43'
+    magenta: '6d8a78'
+    cyan:    'f79826'
+    white:   'eec6a6'
+
+  bright:
+    black:   'a68a74'
+    red:     'db200e'
+    green:   'ea5d1d'
+    yellow:  '9f5f5b'
+    blue:    'be5d43'
+    magenta: '6d8a78'
+    cyan:    'f79826'
+    white:   'eec6a6'
+
+
+cyberpunk:
+  background:
+    1: '000000'
+    2: '1a1a1a'
+    3: '333333'
+    4: '4d4d4d'
+
+  foreground:
+    1: 'bfbfbf'
+    2: 'a6a6a6'
+    3: '8c8c8c'
+    4: '737373'
+
+  accent: 'f4004d'
+
+  normal:
+    black:   '000000'
+    red:     'e21436'
+    green:   'e214af'
+    yellow:  'e1e510'
+    blue:    '386bd1'
+    magenta: 'c138d1'
+    cyan:    '019393'
+    white:   'bfbfbf'
+
+  bright:
+    black:   '000000'
+    red:     'e21436'
+    green:   'e214af'
+    yellow:  'e1e510'
+    blue:    '386bd1'
+    magenta: 'c138d1'
+    cyan:    '019393'
+    white:   'bfbfbf'
