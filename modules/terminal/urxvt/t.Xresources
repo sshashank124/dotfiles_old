@@ -28,3 +28,10 @@ URxvt*color12 :                   #{{ colors.bright.blue }}
 URxvt*color13 :                   #{{ colors.bright.magenta }}
 URxvt*color14 :                   #{{ colors.bright.cyan }}
 URxvt*color15 :                   #{{ colors.bright.white }}
+
+URxvt*color16 :                   #{{ colors.background.2 }}
+URxvt*color17 :                   #{{ colors.background.3 }}
+URxvt*color18 :                   #{{ colors.background.4 }}
+URxvt*color19 :                   #{{ colors.foreground.4 }}
+URxvt*color20 :                   #{{ colors.foreground.3 }}
+URxvt*color21 :                   #{{ colors.foreground.2 }}

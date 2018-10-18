@@ -11,3 +11,5 @@ neovim:
     symlink:
       - content: neovim/init.vim
         target: $XDG_CONFIG_HOME/nvim/init.vim
+      - content: neovim/airline_theme.vim
+        target: ~/.local/share/nvim/plugged/vim-airline/autoload/airline/themes/dark.vim
