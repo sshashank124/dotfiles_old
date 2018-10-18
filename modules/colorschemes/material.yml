@@ -13,7 +13,7 @@ colors:
 
   black:   *gray0
   red:     &red     'f44336'
-  green:   &green   'fcaf50'
+  green:   &green   '4caf50'
   yellow:  &yellow  'ffff00'
   blue:    &blue    '1793d0'
   magenta: &magenta 'eb0e5d'
