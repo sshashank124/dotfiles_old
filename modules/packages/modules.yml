@@ -4,7 +4,7 @@ arch:
 
   on_startup:
     compile:
-      - content: arch/t.packages-list.hook
+      - content: arch/_t.packages-list.hook
         target: $XDG_CONFIG_HOME/system/packages/_packages-list.hook
       - content: arch/t.sync-packages.sh
         target: $XDG_CONFIG_HOME/system/packages/sync-packages.sh

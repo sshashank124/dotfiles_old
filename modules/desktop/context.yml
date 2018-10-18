@@ -1,4 +1,3 @@
 xorg:
   name: startx
   run: startx -- vt1
-  menu: lxrandr

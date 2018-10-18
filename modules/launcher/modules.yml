@@ -11,3 +11,9 @@ rofi:
     compile:
       - content: rofi/t.config
         target: $XDG_CONFIG_HOME/rofi/config
+
+    symlink:
+      - content: rofi/launcher
+        target: $HOME/bin/launcher
+      - content: rofi/selector
+        target: $HOME/bin/selector

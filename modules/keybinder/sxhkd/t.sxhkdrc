@@ -1,13 +1,13 @@
 # terminal
 super + w
-  {{ terminal.run }}
+  $HOME/bin/term
 
 super + Return
-  {{ terminal.run_named }} "floating"
+  $HOME/bin/term "floating"
 
 # web browser
 super + q
-  {{ web.run }}
+  $HOME/bin/web
 
 # music player
 XF86Tools
@@ -19,15 +19,11 @@ super + v
 
 # launcher
 super + r
-  {{ launcher.run }}
+  $HOME/bin/launcher
 
 # computer state menu
 {super + BackSpace,@XF86PowerOff}
-  {{ system.state.menu }}
-
-# display settings menu
-XF86Display
-  {{ desktop.menu }}
+  $HOME/bin/change_state
 
 # volume
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}

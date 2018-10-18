@@ -1,3 +1,5 @@
 firefox:
   name: firefox
-  run: firefox
+
+qutebrowser:
+  name: qutebrowser

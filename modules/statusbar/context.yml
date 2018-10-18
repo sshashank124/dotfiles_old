@@ -1,3 +1,2 @@
 polybar:
   name: polybar
-  run: polybar -q -r top

@@ -7,10 +7,10 @@ state:
   on_startup:
     compile:
       - content: state/t.change_state.sh
-        target: $XDG_CONFIG_HOME/system/state/change_state.sh
+        target: $HOME/bin/change_state
         permissions: +x
       - content: state/t.lock.sh
-        target: $XDG_CONFIG_HOME/system/state/lock.sh
+        target: $HOME/bin/lock
         permissions: +x
 
     symlink:

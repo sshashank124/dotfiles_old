@@ -1,0 +1,2 @@
+#!/bin/sh
+j4-dmenu-desktop --no-generic --dmenu='rofi -i -dmenu -scroll-method 1 -p "App"' "$@"

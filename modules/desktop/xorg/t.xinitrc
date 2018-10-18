@@ -1,8 +1,4 @@
 #!/bin/sh
-# Xorg settings
-[ "$(command -v xsetroot)" ] && xsetroot -cursor_name left_ptr
-[ "$(command -v setxkbmap)" ] && setxkbmap -option ctrl:nocaps
-
 # custom display startup scripts
 if [ -d ~/bin/display_startup ]; then
   for f in ~/bin/display_startup/*; do

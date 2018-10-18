@@ -17,6 +17,7 @@ modules:
     - name: sh::zsh
     - name: desktop::xorg
     - name: wm::bspwm
+    - name: keybinder::sxhkd
     - name: terminal::urxvt
     - name: system::state
     - name: networking::access_point

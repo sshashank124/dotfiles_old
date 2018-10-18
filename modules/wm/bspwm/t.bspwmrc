@@ -1,7 +1,9 @@
 #! /bin/sh
 
+{% if statusbar is defined %}
 # start hotkey daemon
-[ -z "$(pidof sxhkd)" ] && sxhkd &
+$HOME/bin/keybinder
+{% endif %}
 
 # configure bspwm
 bspc config remove_unplugged_monitors  true
@@ -26,7 +28,7 @@ bspc config presel_feedback_color  "#{{ colors.foreground.5 }}"
 
 {% if statusbar is defined %}
 # launch statusbar
-[ -z "$(pidof {{ statusbar.name }})" ] && {{ statusbar.run }} &
+$HOME/bin/statusbar
 {% endif %}
 
 # set window rules

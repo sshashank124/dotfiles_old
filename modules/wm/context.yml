@@ -1,4 +1,3 @@
 bspwm:
   name: bspwm
   run: bspwm
-  exit: bspc quit

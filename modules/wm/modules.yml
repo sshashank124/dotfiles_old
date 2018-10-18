@@ -1,7 +1,6 @@
 bspwm:
   requires:
     - installed: bspwm
-    - installed: sxhkd
 
   on_startup:
     import_context:
@@ -13,9 +12,6 @@ bspwm:
       - content: bspwm/t.bspwmrc
         target: $XDG_CONFIG_HOME/bspwm/bspwmrc
         permissions: +x
-      - content: bspwm/t.sxhkdrc
-        target: $XDG_CONFIG_HOME/sxhkd/sxhkdrc
 
     run:
       - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &
-      - shell: pkill -USR1 -x sxhkd &

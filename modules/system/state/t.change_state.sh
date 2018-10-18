@@ -1,14 +1,14 @@
 #!/bin/sh
 states="Lock|Suspend|Logout|Shutdown|Restart"
-res=$(echo "$states" | {{ launcher.menu }} "System")
+res=$(echo "$states" | $HOME/bin/selector "System")
 
 sleep 1
 
 case "$res" in
   Shutdown) sudo systemctl poweroff ;;
   Restart) sudo systemctl reboot ;;
-  Lock) $XDG_CONFIG_HOME/system/state/lock.sh & ;;
+  Lock) $HOME/bin/lock ;;
   Suspend) sudo systemctl suspend ;;
-  Logout) {{ wm.exit }} ;;
+  Logout) $HOME/bin/wm_exit ;;
   *) exit 1 ;;
 esac
