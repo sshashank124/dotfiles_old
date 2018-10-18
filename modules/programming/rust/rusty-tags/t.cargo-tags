@@ -1,6 +1,0 @@
-#!/bin/sh
-{% if editor.type == "vi" %}
-rusty-tags vi
-{% elif editor.type == "emacs" %}
-rusty-tags emacs
-{% endif %}

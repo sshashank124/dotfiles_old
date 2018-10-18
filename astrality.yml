@@ -1,20 +1,15 @@
-astrality:
-  hot_reload_config: true
-
-
 modules:
   requires_timeout: 2
   run_timeout: 60
 
-  reprocess_modified_files: true
-
   modules_directory: modules
   enabled_modules:
-    - name: colorscheme
+    - name: colorschemes::cyberpunk
     - name: editor::neovim
-    - name: web::firefox
+    - name: web::qutebrowser
     - name: launcher::rofi
     - name: sh::zsh
+    - name: sh::dash
     - name: desktop::xorg
     - name: wm::bspwm
     - name: keybinder::sxhkd

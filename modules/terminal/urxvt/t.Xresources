@@ -7,31 +7,24 @@ URxvt*letterSpace    : 0
 URxvt*perl-ext-common: default,-searchable-scrollback
 
 ! Colors
-URxvt*background     :            #{{ colors.background.1 }}
-URxvt*foreground     :            #{{ colors.foreground.2 }}
+URxvt*background     :            #{{ colors.bg.1 }}
+URxvt*foreground     :            #{{ colors.fg.2 }}
 URxvt*cursorColor    :            #{{ colors.accent }}
-URxvt*highlightColor :            #{{ colors.foreground.4 }}
+URxvt*highlightColor :            #{{ colors.fg.4 }}
 
-URxvt*color0  :                   #{{ colors.normal.black }}
-URxvt*color1  :                   #{{ colors.normal.red }}
-URxvt*color2  :                   #{{ colors.normal.green }}
-URxvt*color3  :                   #{{ colors.normal.yellow }}
-URxvt*color4  :                   #{{ colors.normal.blue }}
-URxvt*color5  :                   #{{ colors.normal.magenta }}
-URxvt*color6  :                   #{{ colors.normal.cyan }}
-URxvt*color7  :                   #{{ colors.normal.white }}
-URxvt*color8  :                   #{{ colors.bright.black }}
-URxvt*color9  :                   #{{ colors.bright.red }}
-URxvt*color10 :                   #{{ colors.bright.green }}
-URxvt*color11 :                   #{{ colors.bright.yellow }}
-URxvt*color12 :                   #{{ colors.bright.blue }}
-URxvt*color13 :                   #{{ colors.bright.magenta }}
-URxvt*color14 :                   #{{ colors.bright.cyan }}
-URxvt*color15 :                   #{{ colors.bright.white }}
-
-URxvt*color16 :                   #{{ colors.background.2 }}
-URxvt*color17 :                   #{{ colors.background.3 }}
-URxvt*color18 :                   #{{ colors.background.4 }}
-URxvt*color19 :                   #{{ colors.foreground.4 }}
-URxvt*color20 :                   #{{ colors.foreground.3 }}
-URxvt*color21 :                   #{{ colors.foreground.2 }}
+URxvt*color0  :                   #{{ colors.black }}
+URxvt*color1  :                   #{{ colors.red }}
+URxvt*color2  :                   #{{ colors.green }}
+URxvt*color3  :                   #{{ colors.yellow }}
+URxvt*color4  :                   #{{ colors.blue }}
+URxvt*color5  :                   #{{ colors.magenta }}
+URxvt*color6  :                   #{{ colors.cyan }}
+URxvt*color7  :                   #{{ colors.white }}
+URxvt*color8  :                   #{{ colors.bg.2 }}
+URxvt*color9  :                   #{{ colors.red }}
+URxvt*color10 :                   #{{ colors.green }}
+URxvt*color11 :                   #{{ colors.yellow }}
+URxvt*color12 :                   #{{ colors.blue }}
+URxvt*color13 :                   #{{ colors.magenta }}
+URxvt*color14 :                   #{{ colors.cyan }}
+URxvt*color15 :                   #{{ colors.fg.1 }}

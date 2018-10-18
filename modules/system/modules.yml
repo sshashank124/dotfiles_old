@@ -4,15 +4,13 @@ state:
     - installed: scrot
     - installed: magick
 
-  on_startup:
-    compile:
-      - content: state/t.change_state.sh
-        target: $HOME/bin/change_state
-        permissions: +x
-      - content: state/t.lock.sh
-        target: $HOME/bin/lock
-        permissions: +x
+  compile:
+    - content: state/t.lock
+      target: $HOME/bin/lock
+      permissions: +x
 
-    symlink:
-      - content: state/overlay.png
-        target: $XDG_CONFIG_HOME/system/state/overlay.png
+  symlink:
+    - content: state/change_state
+      target: $HOME/bin/change_state
+    - content: state/overlay.png
+      target: $XDG_CONFIG_HOME/wallpapers/overlay.png

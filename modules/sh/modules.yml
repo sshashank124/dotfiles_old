@@ -2,18 +2,23 @@ zsh:
   requires:
     - installed: zsh
 
-  on_startup:
-    import_context:
-      from_path: context.yml
-      from_section: zsh
-      to_section: sh
+  compile:
+    - content: zsh/t.zshenv
+      target: $HOME/.zshenv
+    - content: zsh/t.zprofile
+      target: $XDG_CONFIG_HOME/zsh/.zprofile
+    - content: zsh/t.aliasrc
+      target: $XDG_CONFIG_HOME/zsh/.aliasrc
 
-    compile:
-      - content: zsh/t.zshenv
-        target: $HOME/.zshenv
-      - content: zsh/t.zprofile
-        target: $XDG_CONFIG_HOME/zsh/.zprofile
-      - content: zsh/t.aliasrc
-        target: $XDG_CONFIG_HOME/zsh/.aliasrc
-      - content: zsh/t.zshrc
-        target: $XDG_CONFIG_HOME/zsh/.zshrc
+  symlink:
+    - content: zsh/.zshrc
+      target: $XDG_CONFIG_HOME/zsh/.zshrc
+
+
+dash:
+  requires:
+    - installed: dash
+
+  symlink:
+    - content: dash/.profile
+      target: $HOME/.profile

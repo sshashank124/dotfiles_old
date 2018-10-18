@@ -2,19 +2,15 @@ sxhkd:
   requires:
     - installed: sxhkd
 
-  on_startup:
-    import_context:
-      from_path: context.yml
-      from_section: sxhkd
-      to_section: keybinder
+  compile:
+    - content: sxhkd/t.sxhkdrc
+      target: $XDG_CONFIG_HOME/sxhkd/sxhkdrc
 
-    compile:
-      - content: sxhkd/t.sxhkdrc
-        target: $XDG_CONFIG_HOME/sxhkd/sxhkdrc
+  symlink:
+    - content: sxhkd/keybinder
+      target: $HOME/bin/keybinder
+    - content: $HOME/bin/keybinder
+      target: $HOME/bin/display_startup/keybinder
 
-    symlink:
-      - content: sxhkd/keybinder
-        target: $HOME/bin/keybinder
-
-    run:
-      - shell: pkill -USR1 -x sxhkd &
+  run:
+    - shell: pkill -USR1 -x sxhkd &

@@ -1,19 +1,14 @@
 rofi:
   requires:
     - installed: rofi
+    - installed: j4-dmenu-desktop
 
-  on_startup:
-    import_context:
-      from_path: context.yml
-      from_section: rofi
-      to_section: launcher
+  compile:
+    - content: rofi/t.config
+      target: $XDG_CONFIG_HOME/rofi/config
 
-    compile:
-      - content: rofi/t.config
-        target: $XDG_CONFIG_HOME/rofi/config
-
-    symlink:
-      - content: rofi/launcher
-        target: $HOME/bin/launcher
-      - content: rofi/selector
-        target: $HOME/bin/selector
+  symlink:
+    - content: rofi/launcher
+      target: $HOME/bin/launcher
+    - content: rofi/selector
+      target: $HOME/bin/selector

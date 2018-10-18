@@ -11,8 +11,6 @@ window:
 
 tabspaces: 2
 
-draw_bold_text_with_bright_colors: true
-
 font:
   normal:
     family: {{ fonts.powerline }}
@@ -35,32 +33,32 @@ custom_cursor_colors: true
 
 colors:
   primary:
-    background: '0x{{ colors.background.1 }}'
-    foreground: '0x{{ colors.foreground.2 }}'
+    background: '0x{{ colors.bg.1 }}'
+    foreground: '0x{{ colors.fg.2 }}'
 
   cursor:
-    text:   '0x{{ colors.background.1 }}'
+    text:   '0x{{ colors.bg.1 }}'
     cursor: '0x{{ colors.accent }}'
 
   normal:
-    black:   '0x{{ colors.normal.black }}'
-    red:     '0x{{ colors.normal.red }}'
-    green:   '0x{{ colors.normal.green }}'
-    yellow:  '0x{{ colors.normal.yellow }}'
-    blue:    '0x{{ colors.normal.blue }}'
-    magenta: '0x{{ colors.normal.magenta }}'
-    cyan:    '0x{{ colors.normal.cyan }}'
-    white:   '0x{{ colors.normal.white }}'
+    black:   '0x{{ colors.black }}'
+    red:     '0x{{ colors.red }}'
+    green:   '0x{{ colors.green }}'
+    yellow:  '0x{{ colors.yellow }}'
+    blue:    '0x{{ colors.blue }}'
+    magenta: '0x{{ colors.magenta }}'
+    cyan:    '0x{{ colors.cyan }}'
+    white:   '0x{{ colors.white }}'
 
   bright:
-    black:   '0x{{ colors.bright.black }}'
-    red:     '0x{{ colors.bright.red }}'
-    green:   '0x{{ colors.bright.green }}'
-    yellow:  '0x{{ colors.bright.yellow }}'
-    blue:    '0x{{ colors.bright.blue }}'
-    magenta: '0x{{ colors.bright.magenta }}'
-    cyan:    '0x{{ colors.bright.cyan }}'
-    white:   '0x{{ colors.bright.white }}'
+    black:   '0x{{ colors.bg.2 }}'
+    red:     '0x{{ colors.red }}'
+    green:   '0x{{ colors.green }}'
+    yellow:  '0x{{ colors.yellow }}'
+    blue:    '0x{{ colors.blue }}'
+    magenta: '0x{{ colors.magenta }}'
+    cyan:    '0x{{ colors.cyan }}'
+    white:   '0x{{ colors.fg.1 }}'
 
 visual_bell:
   duration: 0
@@ -85,9 +83,6 @@ hide_cursor_when_typing: true
 cursor_style: Block
 
 live_config_reload: true
-
-shell:
-  program: {{ sh.run }}
 
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }

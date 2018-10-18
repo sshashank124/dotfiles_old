@@ -1,2 +1,3 @@
 #!/bin/sh
+# usage: selector title option1|option2|option3|...
 rofi -i -dmenu -scroll-method 1 -sep "|" -p "$@"

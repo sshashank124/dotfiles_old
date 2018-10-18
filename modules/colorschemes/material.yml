@@ -1,0 +1,23 @@
+colors:
+  bg:
+    1: &gray0 '101010'
+    2: &gray1 '252525'
+    3: &gray2 '424242'
+    4: &gray3 '686868'
+
+  fg:
+    1: &gray7 'f2f2f2'
+    2: &gray6 'dddddd'
+    3: &gray5 'aaaaaa'
+    4: &gray4 '868686'
+
+  black:   *gray0
+  red:     &red     'f44336'
+  green:   &green   'fcaf50'
+  yellow:  &yellow  'ffff00'
+  blue:    &blue    '1793d0'
+  magenta: &magenta 'eb0e5d'
+  cyan:    &cyan    '00bcd4'
+  white:   *gray6
+
+  accent:  *cyan

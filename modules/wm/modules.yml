@@ -2,16 +2,17 @@ bspwm:
   requires:
     - installed: bspwm
 
-  on_startup:
-    import_context:
-      from_path: context.yml
-      from_section: bspwm
-      to_section: wm
+  import_context:
+    from_path: bspwm/context.yml
 
-    compile:
-      - content: bspwm/t.bspwmrc
-        target: $XDG_CONFIG_HOME/bspwm/bspwmrc
-        permissions: +x
+  compile:
+    - content: bspwm/t.bspwmrc
+      target: $XDG_CONFIG_HOME/bspwm/bspwmrc
+      permissions: +x
 
-    run:
-      - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &
+  symlink:
+    - content: bspwm/wm_exit
+      target: $HOME/bin/wm_exit
+
+  run:
+    - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &

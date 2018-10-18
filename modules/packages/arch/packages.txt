@@ -28,7 +28,6 @@ feh
 file
 filesystem
 findutils
-firefox
 flake8
 flex
 gawk
@@ -102,6 +101,7 @@ python-tensorflow-opt-cuda
 python-virtualenvwrapper
 python-yaml
 python2
+qt5-webengine-widevine
 qutebrowser
 reiserfsprogs
 rofi

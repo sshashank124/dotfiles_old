@@ -1,5 +1,5 @@
 ##### SHORTHANDS #####
-alias g='{{ vcs.run }}'
+alias g='git'
 alias x='unp' # extracting shortcut for unpacker
 alias o='xdg-open'
 alias p='pacaur'

@@ -1,5 +1,4 @@
-neovim:
-  name: nvim
+editor:
   run: nvim
   type: vi
   diff: nvim -d

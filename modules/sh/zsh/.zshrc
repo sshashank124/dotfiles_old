@@ -61,7 +61,11 @@ zstyle ':completion:*:functions' ignored-patterns '_*'
 ##### PROMPTS ##### 
 setopt prompt_subst
 
-PS1=$'\n%B%F{yellow}%~%f%b\n%B%F{magenta}λ %f%b'
+NL=$'\n'
+virtual_env='$([ -n "$VIRTUAL_ENV" ] && basename $VIRTUAL_ENV)'
+PS1="${NL}%B%F{yellow}%~ %F{cyan}${virtual_env}%f%b${NL}%B%F{magenta}λ %f%b"
+unset virtual_env
+unset NL
 job_names='$(jobs | awk '\''{printf " %s%s", $2, $4}'\'')'
 RPS1="%B%1(j.%F{green}${job_names}.)%(?.. %F{blue}%?)%f%b"
 unset job_names

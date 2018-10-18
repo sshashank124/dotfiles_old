@@ -2,12 +2,6 @@ git:
   requires:
     - installed: git
 
-  on_startup:
-    import_context:
-      from_path: context.yml
-      from_section: git
-      to_section: vcs
-
-    compile:
-      - content: git/t.gitconfig
-        target: ~/.gitconfig
+  compile:
+    - content: git/t.gitconfig
+      target: ~/.gitconfig

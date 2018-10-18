@@ -1,3 +1,2 @@
-xorg:
-  name: startx
+desktop:
   run: startx -- vt1

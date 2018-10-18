@@ -2,30 +2,30 @@ xorg:
   requires:
     - installed: startx
 
-  on_startup:
-    import_context:
-      from_path: context.yml
-      from_section: xorg
-      to_section: desktop
+  import_context:
+    from_path: xorg/context.yml
 
-    compile:
-      - content: xorg/t.xinitrc
-        target: ~/.xinitrc
+  compile:
+    - content: xorg/t.xinitrc
+      target: ~/.xinitrc
 
-    symlink:
-      - content: xorg/user-dirs.dirs
-        target: $XDG_CONFIG_HOME/user-dirs.dirs
-      - content: xorg/meslo-powerline.ttf
-        target: $HOME/.fonts/meslo-powerline.ttf
-      - content: xorg/wallpaper_apply
-        target: $HOME/bin/wallpaper_apply
-      - content: xorg/wallpaper_apply
-        target: $HOME/bin/display_startup/wallpaper_apply
-      - content: xorg/xkb_no_ctrl
-        target: $HOME/bin/xkb_no_ctrl
-      - content: xorg/xkb_no_ctrl
-        target: $HOME/bin/display_startup/xkb_no_ctrl
-      - content: xorg/xcursor_default
-        target: $HOME/bin/xcursor_default
-      - content: xorg/xcursor_default
-        target: $HOME/bin/display_startup/xcursor_default
+  symlink:
+    - content: xorg/user-dirs.dirs
+      target: $XDG_CONFIG_HOME/user-dirs.dirs
+    - content: xorg/meslo-powerline.ttf
+      target: $HOME/.fonts/meslo-powerline.ttf
+
+    - content: xorg/wallpaper_apply
+      target: $HOME/bin/wallpaper_apply
+    - content: $HOME/bin/wallpaper_apply
+      target: $HOME/bin/display_startup/wallpaper_apply
+
+    - content: xorg/xkb_no_ctrl
+      target: $HOME/bin/xkb_no_ctrl
+    - content: $HOME/bin/xkb_no_ctrl
+      target: $HOME/bin/display_startup/xkb_no_ctrl
+
+    - content: xorg/xcursor_default
+      target: $HOME/bin/xcursor_default
+    - content: $HOME/bin/xcursor_default
+      target: $HOME/bin/display_startup/xcursor_default

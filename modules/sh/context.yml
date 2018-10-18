@@ -1,3 +1,0 @@
-zsh:
-  name: zsh
-  run: /usr/bin/zsh

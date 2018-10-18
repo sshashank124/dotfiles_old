@@ -1,0 +1,19 @@
+cyberpunk:
+  import_context:
+    from_path: cyberpunk.yml
+
+material:
+  import_context:
+    from_path: material.yml
+
+autumn:
+  import_context:
+    from_path: autumn.yml
+
+gruvbox:
+  import_context:
+    from_path: gruvbox.yml
+
+solarized:
+  import_context:
+    from_path: solarized.yml
