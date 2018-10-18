@@ -12,14 +12,12 @@ colors:
     4: &gray4 '737373'
 
   black:   *gray0
-  red:     &red     'e21436'
-  green:   &green   'e214af'
-  yellow:  &yellow  'e1e510'
-  blue:    &blue    '386bd1'
-  magenta: &magenta 'c138d1'
-  cyan:    &cyan    '019393'
+  red:     &red     'd50000'
+  green:   &green   '64dd17'
+  yellow:  &yellow  'ffd600'
+  blue:    &blue    '304ffe'
+  magenta: &magenta 'f4004d'
+  cyan:    &cyan    '00b8d4'
   white:   *gray6
 
-  pink:    &pink    'f4004d'
-
-  accent:  *pink
+  accent:  *magenta
