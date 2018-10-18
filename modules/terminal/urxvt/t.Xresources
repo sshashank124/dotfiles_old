@@ -4,7 +4,7 @@ URxvt*scrollBar      : false
 URxvt*internalBorder : {{ dimens.spacing }}
 URxvt*letterSpace    : 0
 
-URxvt*perl-ext-common: "default, -searchable-scrollback"
+URxvt*perl-ext-common: default, -searchable-scrollback
 
 ! Colors
 URxvt*background     :            #{{ colors.background.1 }}

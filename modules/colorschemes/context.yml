@@ -1,497 +1,180 @@
-# https://github.com/morhetz/gruvbox
-gruvbox_dark:
+material:
   background:
-    1: '282828'
-    2: '3c3836'
+    1: &material_black0 '101010'
+    2: &material_black1 '252525'
+    3: '424242'
+    4: '686868'
+
+  foreground:
+    1: &material_white0 'f2f2f2'
+    2: 'dddddd'
+    3: &material_white2 'aaaaaa'
+    4: '868686'
+
+  normal:
+    black:   *material_black0
+    red:     'f44336'
+    green:   '4caf50'
+    yellow:  'ffff00'
+    blue:    '1793D0'
+    magenta: 'eb0e5d'
+    cyan:    '00bcd4'
+    white:   *material_white2
+
+  bright:
+    black:   *material_black1
+    red:     'f44336'
+    green:   '4caf50'
+    yellow:  'ffff00'
+    blue:    '1793D0'
+    magenta: 'eb0e5d'
+    cyan:    '00bcd4'
+    white:   *material_white0
+
+  accent: *material_white0
+
+
+# https://github.com/morhetz/gruvbox
+gruvbox:
+  background:
+    1: &gruvbox_black0 '282828'
+    2: &gruvbox_black1 '3c3836'
     3: '504945'
     4: '665c54'
 
   foreground:
-    1: 'fbf1c7'
+    1: &gruvbox_white0 'fbf1c7'
     2: 'ebdbb2'
-    3: 'd5c4a1'
+    3: &gruvbox_white2 'd5c4a1'
     4: 'bdae93'
+
+  normal:
+    black:   *gruvbox_black0
+    red:     'cc241d'
+    green:   '98971a'
+    yellow:  'd79921'
+    blue:    '458588'
+    magenta: 'b16286'
+    cyan:    '689d6a'
+    white:   *gruvbox_white2
+
+  bright:
+    black:   *gruvbox_black1
+    red:     'fb4934'
+    green:   'b8bb26'
+    yellow:  'fabd2f'
+    blue:    '83a598'
+    magenta: 'd3869b'
+    cyan:    '8ec07c'
+    white:   *gruvbox_white0
 
   accent: 'fe8019'
 
-  normal:
-    black:   '282828'
-    red:     'cc241d'
-    green:   '98971a'
-    yellow:  'd79921'
-    blue:    '458588'
-    magenta: 'b16286'
-    cyan:    '689d6a'
-    white:   'a89984'
-
-  bright:
-    black:   '928374'
-    red:     'fb4934'
-    green:   'b8bb26'
-    yellow:  'fabd2f'
-    blue:    '83a598'
-    magenta: 'd3869b'
-    cyan:    '8ec07c'
-    white:   'ebdbb2'
-
-gruvbox_light:
-  background:
-    1: 'fbf1c7'
-    2: 'ebdbb2'
-    3: 'd5c4a1'
-    4: 'bdae93'
-
-  foreground:
-    1: '3c3836'
-    2: '3c3836'
-    3: '504945'
-    4: '665c54'
-
-  accent: 'af3a03'
-
-  normal:
-    black:   'fbf1c7'
-    red:     'cc241d'
-    green:   '98971a'
-    yellow:  'd79921'
-    blue:    '458588'
-    magenta: 'b16286'
-    cyan:    '689d6a'
-    white:   'a89984'
-
-  bright:
-    black:   '928374'
-    red:     'fb4934'
-    green:   'b8bb26'
-    yellow:  'fabd2f'
-    blue:    '83a598'
-    magenta: 'd3869b'
-    cyan:    '8ec07c'
-    white:   'ebdbb2'
 
 # https://github.com/altercation/solarized
-solarized_dark:
+solarized:
   background:
-    1: '002b36'
-    2: '073642'
+    1: &solarized_black0 '002b36'
+    2: &solarized_black1 '073642'
     3: '586e75'
     4: '657b83'
 
   foreground:
-    1: 'fdf6e3'
+    1: &solarized_white0 'fdf6e3'
     2: 'eee8d5'
-    3: '93a1a1'
+    3: &solarized_white2 '93a1a1'
     4: '839496'
 
-  accent: '859900'
-
   normal:
-    black:   '073642'
+    black:   *solarized_black0
     red:     'dc322f'
-    green:   '859900'
+    green:   &solarized_normal_green '859900'
     yellow:  'b58900'
     blue:    '268bd2'
     magenta: 'd33682'
     cyan:    '2aa198'
-    white:   'eee8d5'
+    white:   *solarized_white2
 
   bright:
-    black:   '002b36'
+    black:   *solarized_black1
     red:     'cb4b16'
     green:   '586e75'
     yellow:  '657b83'
     blue:    '839496'
     magenta: '6c71c4'
     cyan:    '93a1a1'
-    white:   'fdf6e3'
+    white:   *solarized_white0
 
-solarized_light:
-  background:
-    1: 'fdf6e3'
-    2: 'eee8d5'
-    3: '93a1a1'
-    4: '839496'
-
-  foreground:
-    1: '002b36'
-    2: '073642'
-    3: '586e75'
-    4: '657b83'
-
-  accent: 'af005f'
-
-  normal:
-    black:   '073642'
-    red:     'dc322f'
-    green:   '859900'
-    yellow:  'b58900'
-    blue:    '268bd2'
-    magenta: 'd33682'
-    cyan:    '2aa198'
-    white:   'eee8d5'
-
-  bright:
-    black:   '002b36'
-    red:     'cb4b16'
-    green:   '586e75'
-    yellow:  '657b83'
-    blue:    '839496'
-    magenta: '6c71c4'
-    cyan:    '93a1a1'
-    white:   'fdf6e3'
-
-# https://github.com/WhiteAbeLincoln/base16-brushtrees-scheme
-brushtrees_dark:
-  background:
-    1: '485867'
-    2: '5a6d7a'
-    3: '6d828e'
-    4: '8299a1'
-
-  foreground:
-    1: 'e3efef'
-    2: 'c9dbdc'
-    3: 'b0c5c8'
-    4: '98afb5'
-
-  accent: '87b386'
-
-  normal:
-    black:   '485867'
-    red:     'b38686'
-    green:   '87b386'
-    yellow:  'd8bba2'
-    blue:    '86b3b3'
-    magenta: 'b386b2'
-    cyan:    '87b386'
-    white:   'e3efef'
-
-  bright:
-    black:   '485867'
-    red:     'b38686'
-    green:   '87b386'
-    yellow:  'd8bba2'
-    blue:    '86b3b3'
-    magenta: 'b386b2'
-    cyan:    '87b386'
-    white:   'e3efef'
-
-brushtrees_light:
-  background:
-    1: 'e3efef'
-    2: 'c9dbdc'
-    3: 'b0c5c8'
-    4: '98afb5'
-
-  foreground:
-    1: '485867'
-    2: '5a6d7a'
-    3: '6d828e'
-    4: '8299a1'
-
-  accent: 'b386b2'
-
-  normal:
-    black:   '485867'
-    red:     'b38686'
-    green:   '87b386'
-    yellow:  'd8bba2'
-    blue:    '86b3b3'
-    magenta: 'b386b2'
-    cyan:    '87b386'
-    white:   'e3efef'
-
-  bright:
-    black:   '485867'
-    red:     'b38686'
-    green:   '87b386'
-    yellow:  'd8bba2'
-    blue:    '86b3b3'
-    magenta: 'b386b2'
-    cyan:    '87b386'
-    white:   'e3efef'
-
-# https://github.com/chriskempson/base16-default-schemes/ocean.yaml
-ocean_dark:
-  background:
-    1: '2b303b'
-    2: '343d46'
-    3: '4f5b66'
-    4: '65737e'
-
-  foreground:
-    1: 'eff1f5'
-    2: 'dfe1e8'
-    3: 'c0c5ce'
-    4: 'a7adba'
-
-  accent: 'ebcb8b'
-
-  normal:
-    black:   '2b303b'
-    red:     'bf616a'
-    green:   'a3be8c'
-    yellow:  'ebcb8b'
-    blue:    '96b5b4'
-    magenta: 'b48ead'
-    cyan:    'd08770'
-    white:   'eff1f5'
-
-  bright:
-    black:   '2b303b'
-    red:     'bf616a'
-    green:   'a3be8c'
-    yellow:  'ebcb8b'
-    blue:    '96b5b4'
-    magenta: 'b48ead'
-    cyan:    'd08770'
-    white:   'eff1f5'
-
-ocean_light:
-  background:
-    1: 'eff1f5'
-    2: 'dfe1e8'
-    3: 'c0c5ce'
-    4: 'a7adba'
-
-  foreground:
-    1: '2b303b'
-    2: '343d46'
-    3: '4f5b66'
-    4: '65737e'
-
-  accent: 'bf616a'
-
-  normal:
-    black:   '2b303b'
-    red:     'bf616a'
-    green:   'a3be8c'
-    yellow:  'ebcb8b'
-    blue:    '96b5b4'
-    magenta: 'b48ead'
-    cyan:    'd08770'
-    white:   'eff1f5'
-
-  bright:
-    black:   '2b303b'
-    red:     'bf616a'
-    green:   'a3be8c'
-    yellow:  'ebcb8b'
-    blue:    '96b5b4'
-    magenta: 'b48ead'
-    cyan:    'd08770'
-    white:   'eff1f5'
-
-night:
-  background:
-    1: '03001f'
-    2: '171736'
-    3: '262759'
-    4: '36377d'
-
-  foreground:
-    1: 'ededf7'
-    2: 'c9cae8'
-    3: 'a6a7d9'
-    4: '9495d1'
-
-  accent: 'fbfe75'
-
-  normal:
-    black:   '03001f'
-    red:     'f44336'
-    green:   '4caf50'
-    yellow:  'ffff00'
-    blue:    '1793D0'
-    magenta: 'eb0e5d'
-    cyan:    '00bcd4'
-    white:   'ededf7'
-
-  bright:
-    black:   '03001f'
-    red:     'f44336'
-    green:   '4caf50'
-    yellow:  'ffff00'
-    blue:    '1793D0'
-    magenta: 'eb0e5d'
-    cyan:    '00bcd4'
-    white:   'ededf7'
-
-grayscale_dark:
-  background:
-    1: '101010'
-    2: '252525'
-    3: '424242'
-    4: '686868'
-
-  foreground:
-    1: 'f2f2f2'
-    2: 'dddddd'
-    3: 'aaaaaa'
-    4: '868686'
-
-  accent: 'ffffff'
-
-  normal:
-    black:   '101010'
-    red:     'f44336'
-    green:   '4caf50'
-    yellow:  'ffff00'
-    blue:    '1793D0'
-    magenta: 'eb0e5d'
-    cyan:    '00bcd4'
-    white:   'f2f2f2'
-
-  bright:
-    black:   '101010'
-    red:     'f44336'
-    green:   '4caf50'
-    yellow:  'ffff00'
-    blue:    '1793D0'
-    magenta: 'eb0e5d'
-    cyan:    '00bcd4'
-    white:   'f2f2f2'
-
-grayscale_light:
-  background:
-    1: 'f2f2f2'
-    2: 'dddddd'
-    3: 'aaaaaa'
-    4: '868686'
-
-  foreground:
-    1: '101010'
-    2: '252525'
-    3: '424242'
-    4: '686868'
-
-  accent: '000000'
-
-  normal:
-    black:   '101010'
-    red:     'f44336'
-    green:   '4caf50'
-    yellow:  'ffff00'
-    blue:    '1793D0'
-    magenta: 'eb0e5d'
-    cyan:    '00bcd4'
-    white:   'f2f2f2'
-
-  bright:
-    black:   '101010'
-    red:     'f44336'
-    green:   '4caf50'
-    yellow:  'ffff00'
-    blue:    '1793D0'
-    magenta: 'eb0e5d'
-    cyan:    '00bcd4'
-    white:   'f2f2f2'
-
-
-# https://github.com/arcticicestudio/nord
-nord:
-  background:
-    1: '2e3440'
-    2: '3b4252'
-    3: '434c5e'
-    4: '4c566a'
-
-  foreground:
-    1: 'eceff4'
-    2: 'eceff4'
-    3: 'e5e9f0'
-    4: 'd8dee9'
-
-  accent: 'd8dee9'
-
-  normal:
-    black:   '3b4252'
-    red:     'bf616a'
-    green:   'a3be8c'
-    yellow:  'ebcb8b'
-    blue:    '81a1c1'
-    magenta: 'b48ead'
-    cyan:    '88c0d0'
-    white:   'e5e9f0'
-
-  bright:
-    black:   '4c566a'
-    red:     'bf616a'
-    green:   'a3be8c'
-    yellow:  'ebcb8b'
-    blue:    '81a1c1'
-    magenta: 'b48ead'
-    cyan:    '8fbcbb'
-    white:   'eceff4'
+  accent: *solarized_normal_green
 
 
 autumn:
   background:
-    1: '0a0b10'
-    2: '1d212f'
+    1: &autumn_black0 '0a0b10'
+    2: &autumn_black1 '1d212f'
     3: '30374f'
     4: '444c6f'
 
   foreground:
-    1: 'eec6a6'
+    1: &autumn_white0 'eec6a6'
     2: 'e7ad7e'
-    3: 'de9254'
+    3: &autumn_white2 'de9254'
     4: 'd67729'
 
-  accent: 'f79826'
-
   normal:
-    black:   '0a0b10'
+    black:   *autumn_black0
     red:     'db200e'
     green:   'ea5d1d'
     yellow:  '9f5f5b'
     blue:    'be5d43'
     magenta: '6d8a78'
-    cyan:    'f79826'
-    white:   'eec6a6'
+    cyan:    &autumn_normal_cyan 'f79826'
+    white:   *autumn_white2
 
   bright:
-    black:   'a68a74'
+    black:   *autumn_black1
     red:     'db200e'
     green:   'ea5d1d'
     yellow:  '9f5f5b'
     blue:    'be5d43'
     magenta: '6d8a78'
     cyan:    'f79826'
-    white:   'eec6a6'
+    white:   *autumn_white0
+
+  accent: *autumn_normal_cyan
 
 
 cyberpunk:
   background:
-    1: '000000'
-    2: '1a1a1a'
+    1: &cyberpunk_black0 '000000'
+    2: &cyberpunk_black1 '1a1a1a'
     3: '333333'
     4: '4d4d4d'
 
   foreground:
-    1: 'bfbfbf'
+    1: &cyberpunk_white0 'bfbfbf'
     2: 'a6a6a6'
-    3: '8c8c8c'
+    3: &cyberpunk_white2 '8c8c8c'
     4: '737373'
 
-  accent: 'f4004d'
-
   normal:
-    black:   '000000'
+    black:   *cyberpunk_black0
     red:     'e21436'
     green:   'e214af'
     yellow:  'e1e510'
     blue:    '386bd1'
     magenta: 'c138d1'
     cyan:    '019393'
-    white:   'bfbfbf'
+    white:   *cyberpunk_white2
 
   bright:
-    black:   '000000'
+    black:   *cyberpunk_black1
     red:     'e21436'
     green:   'e214af'
     yellow:  'e1e510'
     blue:    '386bd1'
     magenta: 'c138d1'
     cyan:    '019393'
-    white:   'bfbfbf'
+    white:   *cyberpunk_white0
+
+  accent: 'f4004d'
