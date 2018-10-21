@@ -1,7 +1,7 @@
 #!/bin/sh
 # custom display startup scripts
-if [ -d ~/bin/display_startup ]; then
-  for f in ~/bin/display_startup/*; do
+if [ -d {{ host.user.paths.display_init }} ]; then
+  for f in {{ host.user.paths.display_init }}/*; do
     if [ -x "$f" ]; then $f; fi
   done
 fi

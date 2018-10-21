@@ -8,9 +8,10 @@ state:
     - content: state/t.lock
       target: {{ host.user.paths.bin }}/lock
       permissions: +x
+    - content: state/t.change_state
+      target: {{ host.user.paths.bin }}/change_state
+      permissions: +x
 
   symlink:
-    - content: state/change_state
-      target: {{ host.user.paths.bin }}/change_state
     - content: state/overlay.png
       target: $XDG_CONFIG_HOME/wallpapers/overlay.png

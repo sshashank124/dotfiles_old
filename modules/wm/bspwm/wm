@@ -1,0 +1,5 @@
+#!/bin/sh
+case "$1" in
+  exit) bspc quit ;;
+  *) exit 1 ;;
+esac

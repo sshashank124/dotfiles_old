@@ -9,6 +9,6 @@ case "$res" in
   Restart) sudo systemctl reboot ;;
   Lock) {{ host.user.paths.bin }}/lock ;;
   Suspend) sudo systemctl suspend ;;
-  Logout) {{ host.user.paths.bin }}/wm_exit ;;
+  Logout) {{ host.user.paths.bin }}/wm exit ;;
   *) exit 1 ;;
 esac

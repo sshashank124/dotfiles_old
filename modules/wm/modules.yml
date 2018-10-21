@@ -11,8 +11,8 @@ bspwm:
       permissions: +x
 
   symlink:
-    - content: bspwm/wm_exit
-      target: {{ host.user.paths.bin }}/wm_exit
+    - content: bspwm/wm
+      target: {{ host.user.paths.bin }}/wm
 
   run:
     - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &
