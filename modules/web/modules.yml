@@ -12,3 +12,7 @@ qutebrowser:
 
   import_context:
     from_path: qutebrowser/context.yml
+
+  compile:
+    - content: qutebrowser/t.config.py
+      target: $XDG_CONFIG_HOME/qutebrowser/config.py
