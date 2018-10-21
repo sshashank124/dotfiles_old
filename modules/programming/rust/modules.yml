@@ -4,7 +4,7 @@ rust:
 
   symlink:
     - content: .rustrc
-      target: $HOME/bin/rc/.rustrc
+      target: {{ host.user.paths.etc }}/.rustrc
 
 
 rusty_tags:
@@ -14,6 +14,6 @@ rusty_tags:
 
   symlink:
     - content: rusty-tags/cargo-tags
-      target: $HOME/bin/cargo-tags
+      target: {{ host.user.paths.bin }}/cargo-tags
     - content: rusty-tags/config.toml
       target: $HOME/.rusty-tags/config.toml

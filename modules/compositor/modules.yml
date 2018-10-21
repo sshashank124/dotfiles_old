@@ -6,4 +6,4 @@ compton:
     - content: compton/compton.conf
       target: $XDG_CONFIG_HOME/compton/compton.conf
     - content: compton/daemon_compton
-      target: $HOME/bin/display_startup/daemon_compton
+      target: {{ host.user.paths.display_init }}/daemon_compton

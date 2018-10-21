@@ -1,14 +1,14 @@
 #!/bin/sh
 states="Lock|Suspend|Logout|Shutdown|Restart"
-res=$(echo "$states" | $HOME/bin/selector "System")
+res=$(echo "$states" | {{ host.user.paths.bin }}/selector "System")
 
 sleep 1
 
 case "$res" in
   Shutdown) sudo systemctl poweroff ;;
   Restart) sudo systemctl reboot ;;
-  Lock) $HOME/bin/lock ;;
+  Lock) {{ host.user.paths.bin }}/lock ;;
   Suspend) sudo systemctl suspend ;;
-  Logout) $HOME/bin/wm_exit ;;
+  Logout) {{ host.user.paths.bin }}/wm_exit ;;
   *) exit 1 ;;
 esac

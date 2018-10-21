@@ -9,7 +9,6 @@ modules:
     - name: web::qutebrowser
     - name: launcher::rofi
     - name: sh::zsh
-    - name: sh::dash
     - name: desktop::xorg
     - name: wm::bspwm
     - name: keybinder::sxhkd

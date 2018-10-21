@@ -15,6 +15,11 @@ host:
     name: Shashank Singh
     email: sshashank124@gmail.com
 
+    paths:
+      bin: $HOME/bin
+      etc: $HOME/bin/etc
+      display_init: $HOME/bin/display_init
+
   interfaces:
     wlan: {{ "ls /sys/class/net | grep -o 'wl.*'" | shell }}
     eth: {{ "ls /sys/class/net | grep -o 'en.*'" | shell }}

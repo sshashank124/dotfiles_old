@@ -8,9 +8,9 @@ sxhkd:
 
   symlink:
     - content: sxhkd/keybinder
-      target: $HOME/bin/keybinder
-    - content: $HOME/bin/keybinder
-      target: $HOME/bin/display_startup/keybinder
+      target: {{ host.user.paths.bin }}/keybinder
+    - content: {{ host.user.paths.bin }}/keybinder
+      target: {{ host.user.paths.display_init }}/keybinder
 
   run:
     - shell: pkill -USR1 -x sxhkd &

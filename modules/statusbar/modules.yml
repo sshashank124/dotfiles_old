@@ -8,6 +8,6 @@ polybar:
 
   symlink:
     - content: polybar/statusbar
-      target: $HOME/bin/statusbar
+      target: {{ host.user.paths.bin }}/statusbar
     - content: polybar/player-mpris-tail.py
       target: $XDG_CONFIG_HOME/polybar/player-mpris-tail.py

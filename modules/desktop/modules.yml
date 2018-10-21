@@ -16,16 +16,16 @@ xorg:
       target: $HOME/.fonts/meslo-powerline.ttf
 
     - content: xorg/wallpaper_apply
-      target: $HOME/bin/wallpaper_apply
-    - content: $HOME/bin/wallpaper_apply
-      target: $HOME/bin/display_startup/wallpaper_apply
+      target: {{ host.user.paths.bin }}/wallpaper_apply
+    - content: {{ host.user.paths.bin }}/wallpaper_apply
+      target: {{ host.user.paths.display_init }}/wallpaper_apply
 
     - content: xorg/xkb_no_ctrl
-      target: $HOME/bin/xkb_no_ctrl
-    - content: $HOME/bin/xkb_no_ctrl
-      target: $HOME/bin/display_startup/xkb_no_ctrl
+      target: {{ host.user.paths.bin }}/xkb_no_ctrl
+    - content: {{ host.user.paths.bin }}/xkb_no_ctrl
+      target: {{ host.user.paths.display_init }}/xkb_no_ctrl
 
     - content: xorg/xcursor_default
-      target: $HOME/bin/xcursor_default
-    - content: $HOME/bin/xcursor_default
-      target: $HOME/bin/display_startup/xcursor_default
+      target: {{ host.user.paths.bin }}/xcursor_default
+    - content: {{ host.user.paths.bin }}/xcursor_default
+      target: {{ host.user.paths.display_init }}/xcursor_default

@@ -12,7 +12,7 @@ bspwm:
 
   symlink:
     - content: bspwm/wm_exit
-      target: $HOME/bin/wm_exit
+      target: {{ host.user.paths.bin }}/wm_exit
 
   run:
     - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &

@@ -6,5 +6,5 @@ arch:
     - content: arch/t._packages-list.hook
       target: /tmp/_packages-list.hook
     - content: arch/t.sync_packages
-      target: $HOME/bin/sync_packages
+      target: {{ host.user.paths.bin }}/sync_packages
       permissions: +x

@@ -9,6 +9,6 @@ rofi:
 
   symlink:
     - content: rofi/launcher
-      target: $HOME/bin/launcher
+      target: {{ host.user.paths.bin }}/launcher
     - content: rofi/selector
-      target: $HOME/bin/selector
+      target: {{ host.user.paths.bin }}/selector

@@ -8,7 +8,7 @@ alacritty:
 
   symlink:
     - content: alacritty/term
-      target: $HOME/bin/term
+      target: {{ host.user.paths.bin }}/term
 
 
 urxvt:
@@ -21,12 +21,12 @@ urxvt:
 
   symlink:
     - content: urxvt/daemon_urxvt
-      target: $HOME/bin/daemon_urxvt
-    - content: $HOME/bin/daemon_urxvt
-      target: $HOME/bin/display_startup/daemon_urxvt
+      target: {{ host.user.paths.bin }}/daemon_urxvt
+    - content: {{ host.user.paths.bin }}/daemon_urxvt
+      target: {{ host.user.paths.display_init }}/daemon_urxvt
 
     - content: urxvt/term
-      target: $HOME/bin/term
+      target: {{ host.user.paths.bin }}/term
 
   run:
     - shell: xrdb -remove

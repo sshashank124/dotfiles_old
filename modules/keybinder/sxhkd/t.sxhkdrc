@@ -1,9 +1,9 @@
 # terminal
 super + w
-  $HOME/bin/term
+  {{ host.user.paths.bin }}/term
 
 super + Return
-  $HOME/bin/term "floating"
+  {{ host.user.paths.bin }}/term "floating"
 
 # web browser
 super + q
@@ -19,11 +19,11 @@ super + v
 
 # launcher
 super + r
-  $HOME/bin/launcher
+  {{ host.user.paths.bin }}/launcher
 
 # computer state menu
 {super + BackSpace,@XF86PowerOff}
-  $HOME/bin/change_state
+  {{ host.user.paths.bin }}/change_state
 
 # volume
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}

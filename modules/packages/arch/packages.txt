@@ -34,7 +34,6 @@ gawk
 gcc
 gcc-libs
 gettext
-ghc
 git
 glibc
 gpick

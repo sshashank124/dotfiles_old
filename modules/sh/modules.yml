@@ -13,12 +13,3 @@ zsh:
   symlink:
     - content: zsh/.zshrc
       target: $XDG_CONFIG_HOME/zsh/.zshrc
-
-
-dash:
-  requires:
-    - installed: dash
-
-  symlink:
-    - content: dash/.profile
-      target: $HOME/.profile

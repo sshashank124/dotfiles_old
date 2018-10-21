@@ -5,4 +5,4 @@ virtualenvwrapper:
 
   symlink:
     - content: virtualenvwrapper/.virtualenvwrapperrc
-      target: $HOME/bin/rc/.virtualenvwrapperrc
+      target: {{ host.user.paths.etc }}/.virtualenvwrapperrc
