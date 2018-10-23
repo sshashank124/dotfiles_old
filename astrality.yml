@@ -4,7 +4,7 @@ modules:
 
   modules_directory: modules
   enabled_modules:
-    - name: colorschemes::material
+    - name: colorschemes::cyberpunk
     - name: editor::neovim
     - name: web::qutebrowser
     - name: launcher::rofi

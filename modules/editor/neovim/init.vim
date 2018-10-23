@@ -28,6 +28,25 @@ let g:loaded_python3_provider = 1
 let g:loaded_ruby_provider = 1
 let g:loaded_node_provider = 1
 
+" UTILITY FUNCTIONS
+function! Map3(modes, keys, rhs)
+  " uppercase mode: permanent mode change to run command
+  " lowercase mode: temporary (return to mode after command)
+  if a:modes =~ 'N'
+    execute 'nnoremap' a:keys a:rhs
+  endif
+  if a:modes =~ 'I'
+    execute 'inoremap' a:keys '<esc>' . a:rhs
+  elseif a:modes =~ 'i'
+    execute 'inoremap' a:keys '<esc>' . a:rhs . 'i'
+  endif
+  if a:modes =~ 'T'
+    execute 'tnoremap' a:keys '<c-\><c-n>' . a:rhs
+  elseif a:modes =~ 't'
+    execute 'tnoremap' a:keys '<c-\><c-n>' . a:rhs . 'i'
+  endif
+endfunction
+
 " UI
 set background=dark
 set cursorline   " highlight current line
@@ -66,8 +85,8 @@ let g:ctrlp_show_hidden = 1   " show hidden files
 
 " EDITING
 set expandtab ts=2 sw=2 sts=2 smarttab   " tab = 2 spaces
-nnoremap <a-w> :update<cr>|   " save changes
-nnoremap <a-q> :quit<cr>|   " quit
+call Map3('Ni ', '<a-w>', ':update<cr>')  " save changes
+call Map3('NIT', '<a-q>', ':quit<cr>')  " quit
 inoremap jk <esc>|   " easier escape
 cnoremap jk <esc>|   " easier escape
 nnoremap Q @q|   " quick default macro
@@ -95,43 +114,21 @@ function! WinMove(key)   " smart way to move between windows
     exec "wincmd ".a:key
   endif
 endfunction
-nnoremap <a-h> :call WinMove('h')<cr>|   " move to window on left or split new
-inoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
-tnoremap <a-h> <c-\><c-n>:call WinMove('h')<cr>
-nnoremap <a-j> :call WinMove('j')<cr>|   " move to window below or split new
-inoremap <a-j> <c-\><c-n>:call WinMove('j')<cr>
-tnoremap <a-j> <c-\><c-n>:call WinMove('j')<cr>
-nnoremap <a-k> :call WinMove('k')<cr>|   " move to window above or split new
-inoremap <a-k> <c-\><c-n>:call WinMove('k')<cr>
-tnoremap <a-k> <c-\><c-n>:call WinMove('k')<cr>
-nnoremap <a-l> :call WinMove('l')<cr>|   " move to window on right or split new
-inoremap <a-l> <c-\><c-n>:call WinMove('l')<cr>
-tnoremap <a-l> <c-\><c-n>:call WinMove('l')<cr>
-nnoremap <a-s-h> <c-w><|   " shrink window horizontally
-inoremap <a-s-h> <c-\><c-n><c-w><i
-tnoremap <a-s-h> <c-\><c-n><c-w><i
-nnoremap <a-s-j> <c-w>+|   " grow window vertically
-inoremap <a-s-j> <c-\><c-n><c-w>+i
-tnoremap <a-s-j> <c-\><c-n><c-w>+i
-nnoremap <a-s-k> <c-w>-|   " shrink window vertically
-inoremap <a-s-k> <c-\><c-n><c-w>-i
-tnoremap <a-s-k> <c-\><c-n><c-w>-i
-nnoremap <a-s-l> <c-w>>|   " grow window horizontally
-inoremap <a-s-l> <c-\><c-n><c-w>>i
-tnoremap <a-s-l> <c-\><c-n><c-w>>i
+call Map3('NIT', '<a-h>', ':call WinMove(''h'')<cr>') " window to left or new
+call Map3('NIT', '<a-j>', ':call WinMove(''j'')<cr>') " window below or new
+call Map3('NIT', '<a-k>', ':call WinMove(''k'')<cr>') " window above or new
+call Map3('NIT', '<a-l>', ':call WinMove(''l'')<cr>') " window to right or new
+call Map3('Nit', '<a-s-h>', '<c-w><') " shrink window horizontally
+call Map3('Nit', '<a-s-j>', '<c-w>+') " grow window vertically
+call Map3('Nit', '<a-s-k>', '<c-w>-') " shrink window vertically
+call Map3('Nit', '<a-s-l>', '<c-w>>') " grow window horizontally
 
 " BUFFERS
 set hidden   " hide buffers instead of closing on navigating away
-nnoremap <a-a> :bp<cr>|   " go to previous buffer
-inoremap <a-a> <c-\><c-n>:bp<cr>
-tnoremap <a-a> <c-\><c-n>:bp<cr>
-nnoremap <a-s> :bd<cr>|   " delete buffer
-inoremap <a-s> <c-\><c-n>:bd<cr>
-tnoremap <a-s> <c-\><c-n>:bd<cr>
-nnoremap <a-d> :bn<cr>|   " go to next buffer
-inoremap <a-d> <c-\><c-n>:bn<cr>
-tnoremap <a-d> <c-\><c-n>:bn<cr>
+call Map3('NIT', '<a-a>', ':bp<cr>')  " prev buffer
+call Map3('NIT', '<a-s>', ':bd<cr>')  " delete buffer
+call Map3('NIT', '<a-d>', ':bn<cr>')  " next buffer
 
 " TERMINAL
-nnoremap <a-cr> :terminal<cr>i|   " open terminal in insert mode
-autocmd BufEnter term://* startinsert   " always enter terminal in insert mode
+call Map3('NI ', '<a-cr>', ':terminal<cr>')
+autocmd BufEnter,TermOpen term://* startinsert   " enter term in insert mode
