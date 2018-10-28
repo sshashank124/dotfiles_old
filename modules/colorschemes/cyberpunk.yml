@@ -16,7 +16,7 @@ colors:
   green:   &green   '64dd17'
   yellow:  &yellow  'ffd600'
   blue:    &blue    '304ffe'
-  magenta: &magenta 'f4004d'
+  magenta: &magenta 'ff1493'
   cyan:    &cyan    '00b8d4'
   white:   *gray6
 

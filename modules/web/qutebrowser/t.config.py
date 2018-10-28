@@ -3,10 +3,12 @@ c.confirm_quit = ['downloads']  ##   always multiple-tabs downloads never
 c.input.insert_mode.auto_load = True
 
 ## bindings
-config.bind('H', 'tab-prev')
+config.bind('<Alt-q>', 'quit')
+config.bind('<Alt-a>', 'tab-prev')
+config.bind('<Alt-s>', 'tab-close')
+config.bind('<Alt-d>', 'tab-next')
 config.bind('J', 'back')
 config.bind('K', 'forward')
-config.bind('L', 'tab-next')
 
 ## scrolling
 c.scrolling.bar = 'never'
