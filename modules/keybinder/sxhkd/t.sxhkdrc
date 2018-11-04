@@ -13,10 +13,6 @@ super + q
 XF86Tools
   spotify
 
-# web video
-super + v
-  mpv "$(xclip -selection clipboard -out)"
-
 # launcher
 super + r
   {{ host.user.paths.bin }}/launcher

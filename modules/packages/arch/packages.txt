@@ -52,7 +52,6 @@ intel-ucode
 iproute2
 iputils
 j4-dmenu-desktop
-jdk10-openjdk
 jfsutils
 less
 libtool
@@ -93,7 +92,6 @@ python
 python-gobject
 python-matplotlib
 python-numpy
-python-pandas
 python-pip
 python-scikit-learn
 python-tensorflow-opt-cuda

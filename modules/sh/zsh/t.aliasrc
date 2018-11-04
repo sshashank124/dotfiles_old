@@ -8,7 +8,6 @@ alias cb-copy='xclip -selection clipboard -in'
 alias cb-paste='xclip -selection clipboard -out'
 
 # other
-alias lines='wc -l'
 alias sz='du -sh'
 
 ##### COLOR #####
