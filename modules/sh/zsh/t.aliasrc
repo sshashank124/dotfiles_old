@@ -1,7 +1,6 @@
 ##### SHORTHANDS #####
 alias g='git'
 alias x='unp' # extracting shortcut for unpacker
-alias o='xdg-open'
 alias p='pacaur'
 
 alias cb-copy='xclip -selection clipboard -in'
