@@ -17,5 +17,6 @@ modules:
     - name: networking::access_point
     - name: packages::arch
     - name: vcs::git
+    - name: viewer/pdf::zathura
     - name: security::gnupg
     - name: programming/python::*

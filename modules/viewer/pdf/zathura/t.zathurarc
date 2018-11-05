@@ -1,0 +1,45 @@
+set n-completion-items 10
+set adjust-open width
+set smooth-scroll true
+set statusbar-basename true
+
+set font "{{ fonts.powerline }} 12"
+
+set statusbar-h-padding {{ dimens.border }}
+set statusbar-v-padding {{ dimens.border }}
+set page-padding        {{ dimens.spacing }}
+
+# COLORS
+set default-bg "#{{ colors.black }}"
+set default-fg "#{{ colors.white }}"
+
+set statusbar-bg "#{{ colors.black }}"
+set statusbar-fg "#{{ colors.white }}"
+
+set completion-bg           "#{{ colors.bg.2 }}"
+set completion-fg           "#{{ colors.fg.3 }}"
+set completion-group-bg     "#{{ colors.bg.1 }}"
+set completion-group-fg     "#{{ colors.white }}"
+set completion-highlight-bg "#{{ colors.accent }}"
+set completion-highlight-fg "#{{ colors.black }}"
+
+set inputbar-bg "#{{ colors.accent }}"
+set inputbar-fg "#{{ colors.black }}"
+
+set notification-bg         "#{{ colors.green }}"
+set notification-fg         "#{{ colors.black }}"
+set notification-warning-bg "#{{ colors.yellow }}"
+set notification-warning-fg "#{{ colors.black }}"
+set notification-error-bg   "#{{ colors.red }}"
+set notification-error-fg   "#{{ colors.black }}"
+
+set render-loading-bg "#{{ colors.white }}"
+set render-loading-fg "#{{ colors.black }}"
+
+set index-bg        "#{{ colors.black }}"
+set index-fg        "#{{ colors.white }}"
+set index-active-bg "#{{ colors.accent }}"
+set index-active-fg "#{{ colors.black }}"
+
+set recolor-darkcolor  "#{{ colors.white }}"
+set recolor-lightcolor "#{{ colors.black }}"

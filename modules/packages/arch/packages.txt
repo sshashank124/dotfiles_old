@@ -132,7 +132,7 @@ yajl
 youtube-dl
 z
 zathura
-zathura-pdf-mupdf
+zathura-pdf-poppler
 zip
 zsh
 zsh-completions
