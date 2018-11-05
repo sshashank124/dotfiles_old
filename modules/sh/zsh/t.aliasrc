@@ -21,7 +21,7 @@ alias vim='{{ editor.run }}'
 alias f='feh --scale'
 
 alias l='ls -A --file-type'
-alias ll='l -lgGh'
+alias ll='l -lh'
 
 alias ghc='ghc -dynamic'
 
