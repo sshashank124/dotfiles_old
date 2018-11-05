@@ -111,8 +111,8 @@ tar
 texinfo
 tlp
 ttf-font-awesome-4
-ttf-meslo
 ttf-roboto
+ttf-roboto-slab
 universal-ctags-git
 unp
 unzip

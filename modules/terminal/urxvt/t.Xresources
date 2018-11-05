@@ -1,5 +1,5 @@
 URxvt*termName       : screen-256color
-URxvt*font           : xft:{{ fonts.powerline }}:size=12
+URxvt*font           : xft:{{ fonts.monospace }}:size=12
 URxvt*scrollBar      : false
 URxvt*internalBorder : {{ dimens.spacing }}
 URxvt*letterSpace    : 0

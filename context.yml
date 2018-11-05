@@ -1,7 +1,7 @@
 fonts:
-  gui: Roboto
-  monospace: Meslo LG S
-  powerline: Meslo LG S for Powerline
+  serif: Roboto Slab
+  sans: Roboto
+  monospace: Meslo LG S for Powerline
   icons: FontAwesome
 
 

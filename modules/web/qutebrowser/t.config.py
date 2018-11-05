@@ -49,10 +49,7 @@ _colors = {
 C = c.colors
 
 ## fonts
-c.fonts.monospace = '{{ fonts.powerline }}'
-c.fonts.web.family.sans_serif = '{{ fonts.gui }}'
-c.fonts.web.family.serif = '{{ fonts.gui }}'
-c.fonts.web.family.standard = '{{ fonts.gui }}'
+c.fonts.monospace = '{{ fonts.monospace }}'
 _font_size_normal = 12
 _font_size_small = 10
 
