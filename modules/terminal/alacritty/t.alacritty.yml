@@ -13,14 +13,14 @@ tabspaces: 2
 
 font:
   normal:
-    family: {{ fonts.monospace }}
+    family: monospace
 
   bold:
-    family: {{ fonts.monospace }}
+    family: monospace
     style: Bold
 
   italic:
-    family: {{ fonts.monospace }}
+    family: monospace
     style: Italic
 
   size: 8

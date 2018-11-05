@@ -3,7 +3,7 @@ set adjust-open width
 set smooth-scroll true
 set statusbar-basename true
 
-set font "{{ fonts.monospace }} 12"
+set font "monospace 12"
 
 set statusbar-h-padding {{ dimens.border }}
 set statusbar-v-padding {{ dimens.border }}

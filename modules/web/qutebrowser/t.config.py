@@ -49,7 +49,7 @@ _colors = {
 C = c.colors
 
 ## fonts
-c.fonts.monospace = '{{ fonts.monospace }}'
+c.fonts.monospace = 'monospace'
 _font_size_normal = 12
 _font_size_small = 10
 
@@ -163,7 +163,7 @@ C.prompts.bg = _colors['black']
 C.prompts.border = '0px'
 C.prompts.fg = _colors['white']
 C.prompts.selected.bg = _colors['accent']
-c.fonts.prompts = f'{_font_size_normal}pt sans-serif'
+c.fonts.prompts = f'{_font_size_normal}pt monospace'
 
 
 # STATUSBAR
