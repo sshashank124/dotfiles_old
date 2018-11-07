@@ -108,7 +108,6 @@ systemd
 systemd-sysvcompat
 tar
 texinfo
-tlp
 ttf-font-awesome-4
 ttf-roboto
 ttf-roboto-slab

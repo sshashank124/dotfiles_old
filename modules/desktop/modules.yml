@@ -22,10 +22,10 @@ xorg:
     - content: {{ host.user.paths.bin }}/wallpaper_apply
       target: {{ host.user.paths.display_init }}/wallpaper_apply
 
-    - content: xorg/xkb_no_ctrl
-      target: {{ host.user.paths.bin }}/xkb_no_ctrl
-    - content: {{ host.user.paths.bin }}/xkb_no_ctrl
-      target: {{ host.user.paths.display_init }}/xkb_no_ctrl
+    - content: xorg/xkb_ctrl_caps_swap
+      target: {{ host.user.paths.bin }}/xkb_ctrl_caps_swap
+    - content: {{ host.user.paths.bin }}/xkb_ctrl_caps_swap
+      target: {{ host.user.paths.display_init }}/xkb_ctrl_caps_swap
 
     - content: xorg/xcursor_default
       target: {{ host.user.paths.bin }}/xcursor_default
