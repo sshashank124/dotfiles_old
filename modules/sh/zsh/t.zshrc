@@ -43,6 +43,7 @@ setopt no_check_jobs
 setopt globdots
 setopt complete_in_word
 setopt complete_aliases
+setopt no_list_ambiguous
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' \
                                     'r:|[._-]=* r:|=*' \
