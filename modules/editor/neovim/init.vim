@@ -59,12 +59,21 @@ augroup CursorLine   " only highlight current line in active buffer/window
     au BufWinEnter * setlocal cursorline
     au WinLeave * setlocal nocursorline
 augroup END
+hi VertSplit cterm=none ctermbg=8 ctermfg=8|   " dark gray vertical split
+hi SignColumn ctermbg=0|   " no bg on signs gutter
 set number relativenumber   " relative line numbers except current line
 set cmdheight=1   " command bar height
 "" airline
 let g:airline_powerline_fonts = 1   " enable custom decoration glyphs
 let g:airline#extensions#tabline#enabled = 1   " enable topbar
 let g:airline#extensions#tabline#buffer_nr_show = 1   " show buffer number
+"" ale: less annoying errors/warnings
+let g:ale_sign_error = '=>'
+let g:ale_sign_warning = '->'
+hi ALEErrorSign cterm=bold ctermfg=1
+hi ALEWarningSign cterm=bold ctermfg=3
+hi ALEError ctermbg=8
+hi ALEWarning ctermbg=8
 
 " MOVEMENT
 set whichwrap+=<,>,h,l   " wrap movement on lines

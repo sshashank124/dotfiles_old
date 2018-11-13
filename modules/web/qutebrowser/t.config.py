@@ -12,7 +12,7 @@ config.bind('K', 'forward')
 
 ## scrolling
 c.scrolling.bar = 'never'
-c.scrolling.smooth = True
+c.scrolling.smooth = False
 
 ## url
 c.url.start_pages = ['about:blank']

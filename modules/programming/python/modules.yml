@@ -1,8 +1,0 @@
-virtualenvwrapper:
-  requires:
-    - installed: python
-    - installed: virtualenvwrapper.sh
-
-  symlink:
-    - content: virtualenvwrapper/.virtualenvwrapperrc
-      target: {{ host.user.paths.etc }}/.virtualenvwrapperrc

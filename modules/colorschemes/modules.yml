@@ -14,6 +14,10 @@ gruvbox:
   import_context:
     from_path: gruvbox.yml
 
+gruvbox_light:
+  import_context:
+    from_path: gruvbox_light.yml
+
 solarized:
   import_context:
     from_path: solarized.yml

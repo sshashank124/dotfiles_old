@@ -19,4 +19,4 @@ modules:
     - name: vcs::git
     - name: viewer/pdf::zathura
     - name: security::gnupg
-    - name: programming/python::*
+    - name: programming/rust::*
