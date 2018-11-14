@@ -58,6 +58,7 @@ _font_size_small = 10
 c.content.default_encoding = 'utf-8'
 c.content.geolocation = False  ##   true false ask
 c.content.windowed_fullscreen = True
+config.set('content.register_protocol_handler', True, 'mail.google.com')
 
 ## theming
 C.webpage.bg = _colors['white']
