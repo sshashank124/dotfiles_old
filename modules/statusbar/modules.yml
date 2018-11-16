@@ -1,13 +1,14 @@
 polybar:
   requires:
     - installed: polybar
+    - module: desktop::xorg
 
   compile:
     - content: polybar/t.config
-      target: $XDG_CONFIG_HOME/polybar/config
+      target: {{ host.user.paths.config }}/polybar/config
 
   symlink:
     - content: polybar/statusbar
       target: {{ host.user.paths.bin }}/statusbar
     - content: polybar/player-mpris-tail.py
-      target: $XDG_CONFIG_HOME/polybar/player-mpris-tail.py
+      target: {{ host.user.paths.config }}/polybar/player-mpris-tail.py

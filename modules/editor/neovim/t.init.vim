@@ -1,5 +1,5 @@
 " PLUGINS
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('{{ host.user.paths.data }}/nvim/plugged')
 Plug 'bling/vim-airline'
 Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'

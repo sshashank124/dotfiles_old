@@ -3,6 +3,7 @@ state:
     - installed: systemctl
     - installed: scrot
     - installed: magick
+    - module: desktop::xorg
 
   compile:
     - content: state/t.lock
@@ -14,4 +15,4 @@ state:
 
   symlink:
     - content: state/overlay.png
-      target: $XDG_CONFIG_HOME/wallpapers/overlay.png
+      target: {{ host.user.paths.config }}/wallpapers/overlay.png

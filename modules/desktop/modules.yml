@@ -7,15 +7,15 @@ xorg:
 
   compile:
     - content: xorg/t.xinitrc
-      target: $HOME/.xinitrc
+      target: {{ host.user.paths.home }}/.xinitrc
     - content: xorg/t.fonts.conf
-      target: $XDG_CONFIG_HOME/fontconfig/fonts.conf
+      target: {{ host.user.paths.config }}/fontconfig/fonts.conf
 
   symlink:
     - content: xorg/user-dirs.dirs
-      target: $XDG_CONFIG_HOME/user-dirs.dirs
+      target: {{ host.user.paths.config }}/user-dirs.dirs
     - content: xorg/meslo-powerline.ttf
-      target: $HOME/.local/share/fonts/meslo-powerline.ttf
+      target: {{ host.user.paths.data }}/fonts/meslo-powerline.ttf
 
     - content: xorg/wallpaper_apply
       target: {{ host.user.paths.bin }}/wallpaper_apply

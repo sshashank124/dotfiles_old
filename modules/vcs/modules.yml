@@ -4,4 +4,4 @@ git:
 
   compile:
     - content: git/t.gitconfig
-      target: ~/.gitconfig
+      target: {{ host.user.paths.home }}/.gitconfig

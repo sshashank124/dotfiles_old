@@ -1,10 +1,11 @@
 zathura:
   requires:
     - installed: zathura
+    - module: desktop::xorg
 
   compile:
     - content: zathura/t.zathurarc
-      target: $XDG_CONFIG_HOME/zathura/zathurarc
+      target: {{ host.user.paths.config }}/zathura/zathurarc
 
   symlink:
     - content: zathura/pdf

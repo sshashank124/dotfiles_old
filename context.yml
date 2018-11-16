@@ -16,9 +16,13 @@ host:
     email: sshashank124@gmail.com
 
     paths:
-      bin: $HOME/bin
-      etc: $HOME/bin/etc
-      display_init: $HOME/bin/display_init
+      home: {{ env.HOME }}
+      config: {{ env.HOME }}/.config
+      data: {{ env.HOME }}/.local/share
+      cache: {{ env.HOME }}/.cache
+      bin: {{ env.HOME }}/bin
+      etc: {{ env.HOME }}/bin/etc
+      display_init: {{ env.HOME }}/bin/display_init
 
   interfaces:
     wlan: {{ "ls /sys/class/net | grep -o 'wl.*'" | shell }}

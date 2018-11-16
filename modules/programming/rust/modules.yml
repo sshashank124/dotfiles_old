@@ -2,8 +2,8 @@ rust:
   requires:
     - installed: cargo
 
-  symlink:
-    - content: .rustrc
+  compile:
+    - content: t.rustrc
       target: {{ host.user.paths.etc }}/.rustrc
 
 
@@ -16,4 +16,4 @@ rusty_tags:
     - content: rusty-tags/cargo-tags
       target: {{ host.user.paths.bin }}/cargo-tags
     - content: rusty-tags/config.toml
-      target: $HOME/.rusty-tags/config.toml
+      target: {{ host.user.paths.home }}/.rusty-tags/config.toml

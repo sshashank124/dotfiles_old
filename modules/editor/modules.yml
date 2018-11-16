@@ -5,8 +5,10 @@ neovim:
   import_context:
     from_path: neovim/context.yml
 
+  compile:
+    - content: neovim/t.init.vim
+      target: {{ host.user.paths.config }}/nvim/init.vim
+
   symlink:
-    - content: neovim/init.vim
-      target: $XDG_CONFIG_HOME/nvim/init.vim
     - content: neovim/airline_theme.vim
-      target: ~/.local/share/nvim/plugged/vim-airline/autoload/airline/themes/dark.vim
+      target: {{ host.user.paths.data }}/nvim/plugged/vim-airline/autoload/airline/themes/dark.vim

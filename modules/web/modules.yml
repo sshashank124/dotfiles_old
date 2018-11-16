@@ -15,8 +15,8 @@ qutebrowser:
 
   compile:
     - content: qutebrowser/t.config.py
-      target: $XDG_CONFIG_HOME/qutebrowser/config.py
+      target: {{ host.user.paths.config }}/qutebrowser/config.py
 
   symlink:
     - content: qutebrowser/quickmarks
-      target: $XDG_CONFIG_HOME/qutebrowser/quickmarks
+      target: {{ host.user.paths.config }}/qutebrowser/quickmarks

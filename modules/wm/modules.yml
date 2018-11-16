@@ -1,13 +1,14 @@
 bspwm:
   requires:
     - installed: bspwm
+    - module: desktop::xorg
 
   import_context:
     from_path: bspwm/context.yml
 
   compile:
     - content: bspwm/t.bspwmrc
-      target: $XDG_CONFIG_HOME/bspwm/bspwmrc
+      target: {{ host.user.paths.config }}/bspwm/bspwmrc
       permissions: +x
 
   symlink:
@@ -15,4 +16,4 @@ bspwm:
       target: {{ host.user.paths.bin }}/wm
 
   run:
-    - shell: $XDG_CONFIG_HOME/bspwm/bspwmrc &
+    - shell: {{ host.user.paths.config }}/bspwm/bspwmrc &

@@ -4,10 +4,10 @@ zsh:
 
   compile:
     - content: zsh/t.zshenv
-      target: $HOME/.zshenv
+      target: {{ host.user.paths.home }}/.zshenv
     - content: zsh/t.zprofile
-      target: $XDG_CONFIG_HOME/zsh/.zprofile
+      target: {{ host.user.paths.config }}/zsh/.zprofile
     - content: zsh/t.aliasrc
-      target: $XDG_CONFIG_HOME/zsh/.aliasrc
+      target: {{ host.user.paths.config }}/zsh/.aliasrc
     - content: zsh/t.zshrc
-      target: $XDG_CONFIG_HOME/zsh/.zshrc
+      target: {{ host.user.paths.config }}/zsh/.zshrc

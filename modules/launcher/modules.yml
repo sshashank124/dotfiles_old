@@ -2,10 +2,11 @@ rofi:
   requires:
     - installed: rofi
     - installed: j4-dmenu-desktop
+    - module: desktop::xorg
 
   compile:
     - content: rofi/t.config
-      target: $XDG_CONFIG_HOME/rofi/config
+      target: {{ host.user.paths.config }}/rofi/config
 
   symlink:
     - content: rofi/launcher

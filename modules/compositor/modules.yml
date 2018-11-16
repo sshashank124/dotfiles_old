@@ -1,9 +1,10 @@
 compton:
   requires:
     - installed: compton
+    - module: desktop::xorg
 
   symlink:
     - content: compton/compton.conf
-      target: $XDG_CONFIG_HOME/compton/compton.conf
+      target: {{ host.user.paths.config }}/compton/compton.conf
     - content: compton/daemon_compton
       target: {{ host.user.paths.display_init }}/daemon_compton
