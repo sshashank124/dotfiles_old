@@ -1,7 +1,7 @@
 sxhkd:
   requires:
-    - installed: sxhkd
     - module: desktop::xorg
+    - installed: sxhkd
 
   compile:
     - content: sxhkd/t.sxhkdrc
@@ -11,7 +11,7 @@ sxhkd:
     - content: sxhkd/keybinder
       target: {{ host.user.paths.bin }}/keybinder
     - content: {{ host.user.paths.bin }}/keybinder
-      target: {{ host.user.paths.display_init }}/keybinder
+      target: {{ host.user.paths.display_init }}/50-keybinder
 
   run:
     - shell: pkill -USR1 -x sxhkd &

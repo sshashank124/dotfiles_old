@@ -1,0 +1,3 @@
+#!/bin/sh
+xrdb -merge {{ host.user.paths.home }}/.Xresources
+urxvtd -f -o -q

@@ -4,12 +4,13 @@ modules:
 
   modules_directory: modules
   enabled_modules:
+    - name: desktop::xorg
     - name: colorschemes::cyberpunk
     - name: editor::neovim
     - name: web::qutebrowser
     - name: launcher::rofi
     - name: sh::zsh
-    - name: desktop::xorg
+    - name: gpu::nvidia
     - name: wm::bspwm
     - name: keybinder::sxhkd
     - name: terminal::urxvt

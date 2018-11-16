@@ -10,24 +10,25 @@ xorg:
       target: {{ host.user.paths.home }}/.xinitrc
     - content: xorg/t.fonts.conf
       target: {{ host.user.paths.config }}/fontconfig/fonts.conf
+    - content: xorg/t.user-dirs.dirs
+      target: {{ host.user.paths.config }}/user-dirs.dirs
+    - content: xorg/t.wallpaper_apply
+      target: {{ host.user.paths.bin }}/wallpaper_apply
+      permissions: +x
 
   symlink:
-    - content: xorg/user-dirs.dirs
-      target: {{ host.user.paths.config }}/user-dirs.dirs
-    - content: xorg/meslo-powerline.ttf
-      target: {{ host.user.paths.data }}/fonts/meslo-powerline.ttf
-
-    - content: xorg/wallpaper_apply
-      target: {{ host.user.paths.bin }}/wallpaper_apply
     - content: {{ host.user.paths.bin }}/wallpaper_apply
-      target: {{ host.user.paths.display_init }}/wallpaper_apply
+      target: {{ host.user.paths.display_init }}/20-wallpaper_apply
 
     - content: xorg/xkb_ctrl_caps_swap
       target: {{ host.user.paths.bin }}/xkb_ctrl_caps_swap
     - content: {{ host.user.paths.bin }}/xkb_ctrl_caps_swap
-      target: {{ host.user.paths.display_init }}/xkb_ctrl_caps_swap
+      target: {{ host.user.paths.display_init }}/20-xkb_ctrl_caps_swap
 
     - content: xorg/xcursor_default
       target: {{ host.user.paths.bin }}/xcursor_default
     - content: {{ host.user.paths.bin }}/xcursor_default
-      target: {{ host.user.paths.display_init }}/xcursor_default
+      target: {{ host.user.paths.display_init }}/20-xcursor_default
+
+    - content: xorg/meslo-powerline.ttf
+      target: {{ host.user.paths.data }}/fonts/meslo-powerline.ttf

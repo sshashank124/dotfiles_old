@@ -1,7 +1,7 @@
 bspwm:
   requires:
-    - installed: bspwm
     - module: desktop::xorg
+    - installed: bspwm
 
   import_context:
     from_path: bspwm/context.yml

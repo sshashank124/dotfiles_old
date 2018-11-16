@@ -1,6 +1,6 @@
 # Default settings for user directories
-XDG_DESKTOP_DIR="{{ host.user.paths.home }}"
-XDG_DOCUMENTS_DIR="{{ host.user.paths.home }}"
-XDG_DOWNLOAD_DIR="{{ host.user.paths.home }}/downloads"
-XDG_MUSIC_DIR="{{ host.user.paths.home }}"
-XDG_PICTURES_DIR="{{ host.user.paths.home }}"
+XDG_DESKTOP_DIR="/home/phaqlow"
+XDG_DOCUMENTS_DIR="/home/phaqlow"
+XDG_DOWNLOAD_DIR="/home/phaqlow/downloads"
+XDG_MUSIC_DIR="/home/phaqlow"
+XDG_PICTURES_DIR="/home/phaqlow"

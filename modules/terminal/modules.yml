@@ -1,7 +1,7 @@
 alacritty:
   requires:
-    - installed: alacritty
     - module: desktop::xorg
+    - installed: alacritty
 
   compile:
     - content: alacritty/t.alacritty.yml
@@ -14,18 +14,19 @@ alacritty:
 
 urxvt:
   requires:
-    - installed: urxvt
     - module: desktop::xorg
+    - installed: urxvt
 
   compile:
     - content: urxvt/t.Xresources
       target: {{ host.user.paths.home }}/.Xresources
+    - content: urxvt/t.daemon_urxvt
+      target: {{ host.user.paths.bin }}/daemon_urxvt
+      permissions: +x
 
   symlink:
-    - content: urxvt/daemon_urxvt
-      target: {{ host.user.paths.bin }}/daemon_urxvt
     - content: {{ host.user.paths.bin }}/daemon_urxvt
-      target: {{ host.user.paths.display_init }}/daemon_urxvt
+      target: {{ host.user.paths.display_init }}/50-daemon_urxvt
 
     - content: urxvt/term
       target: {{ host.user.paths.bin }}/term

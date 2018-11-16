@@ -1,8 +1,8 @@
 rofi:
   requires:
+    - module: desktop::xorg
     - installed: rofi
     - installed: j4-dmenu-desktop
-    - module: desktop::xorg
 
   compile:
     - content: rofi/t.config

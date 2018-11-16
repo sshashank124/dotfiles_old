@@ -1,7 +1,7 @@
 zathura:
   requires:
-    - installed: zathura
     - module: desktop::xorg
+    - installed: zathura
 
   compile:
     - content: zathura/t.zathurarc

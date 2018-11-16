@@ -1,9 +1,9 @@
 state:
   requires:
+    - module: desktop::xorg
     - installed: systemctl
     - installed: scrot
     - installed: magick
-    - module: desktop::xorg
 
   compile:
     - content: state/t.lock
