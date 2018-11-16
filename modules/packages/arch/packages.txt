@@ -5,11 +5,9 @@ asus-kbd-backlight
 autoconf
 automake
 bash
-bbswitch
 binutils
 bison
 bspwm
-bumblebee
 bzip2
 coreutils
 cower
@@ -37,6 +35,7 @@ git
 glibc
 grep
 groff
+gst-plugins-base
 gzip
 haveged
 hdf5
@@ -66,8 +65,8 @@ mpv
 neovim
 netctl
 nvidia
+nvidia-utils
 openconnect
-opencv
 openssh
 p7zip
 pacaur
@@ -78,7 +77,6 @@ pciutils
 perl
 pkgconf
 playerctl
-primus
 procps-ng
 psmisc
 pulseaudio
@@ -87,7 +85,6 @@ python
 python-numpy
 python-pip
 python-scikit-learn
-python-tensorflow-opt-cuda
 python-yaml
 python2
 python36
@@ -107,7 +104,6 @@ sudo
 sxhkd
 sysfsutils
 systemd
-systemd-sysvcompat
 tar
 texinfo
 ttf-font-awesome-4

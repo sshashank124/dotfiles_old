@@ -24,8 +24,6 @@ alias ll='l -lh'
 
 alias ghc='ghc -dynamic'
 
-alias optirun='optirun -b primus'
-
 # list contents when changing into directory
 chpwd() { l; }
 
