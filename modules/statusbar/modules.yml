@@ -9,6 +9,6 @@ polybar:
 
   symlink:
     - content: polybar/statusbar
-      target: {{ host.user.paths.bin }}/statusbar
+      target: {{ host.user.paths.bin }}/
     - content: polybar/player-mpris-tail.py
-      target: {{ host.user.paths.config }}/polybar/player-mpris-tail.py
+      target: {{ host.user.paths.config }}/polybar/

@@ -22,7 +22,7 @@ host:
       cache: {{ env.HOME }}/.cache
       bin: {{ env.HOME }}/bin
       etc: {{ env.HOME }}/bin/etc
-      display_init: {{ env.HOME }}/bin/display_init
+      display_init: {{ env.HOME }}/bin/display-init
 
   interfaces:
     wlan: {{ "ls /sys/class/net | grep -o 'wl.*'" | shell }}

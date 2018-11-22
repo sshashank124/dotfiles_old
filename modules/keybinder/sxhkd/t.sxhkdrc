@@ -19,7 +19,7 @@ super + r
 
 # computer state menu
 {super + BackSpace,@XF86PowerOff}
-  {{ host.user.paths.bin }}/change_state
+  {{ host.user.paths.bin }}/change-state
 
 # volume
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}

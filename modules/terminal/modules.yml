@@ -9,7 +9,7 @@ alacritty:
 
   symlink:
     - content: alacritty/term
-      target: {{ host.user.paths.bin }}/term
+      target: {{ host.user.paths.bin }}/
 
 
 urxvt:
@@ -20,16 +20,15 @@ urxvt:
   compile:
     - content: urxvt/t.Xresources
       target: {{ host.user.paths.home }}/.Xresources
-    - content: urxvt/t.daemon_urxvt
-      target: {{ host.user.paths.bin }}/daemon_urxvt
+    - content: urxvt/t.daemon-urxvt
+      target: {{ host.user.paths.bin }}/daemon-urxvt
       permissions: +x
 
   symlink:
-    - content: {{ host.user.paths.bin }}/daemon_urxvt
-      target: {{ host.user.paths.display_init }}/50-daemon_urxvt
-
+    - content: {{ host.user.paths.bin }}/daemon-urxvt
+      target: {{ host.user.paths.display_init }}/50-daemon-urxvt
     - content: urxvt/term
-      target: {{ host.user.paths.bin }}/term
+      target: {{ host.user.paths.bin }}/
 
   run:
     - shell: xrdb -remove

@@ -13,7 +13,7 @@ bspwm:
 
   symlink:
     - content: bspwm/wm
-      target: {{ host.user.paths.bin }}/wm
+      target: {{ host.user.paths.bin }}/
 
   run:
     - shell: {{ host.user.paths.config }}/bspwm/bspwmrc &

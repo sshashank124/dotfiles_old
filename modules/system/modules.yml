@@ -9,10 +9,10 @@ state:
     - content: state/t.lock
       target: {{ host.user.paths.bin }}/lock
       permissions: +x
-    - content: state/t.change_state
-      target: {{ host.user.paths.bin }}/change_state
+    - content: state/t.change-state
+      target: {{ host.user.paths.bin }}/change-state
       permissions: +x
 
   symlink:
     - content: state/overlay.png
-      target: {{ host.user.paths.config }}/wallpapers/overlay.png
+      target: {{ host.user.paths.config }}/wallpapers/

@@ -4,7 +4,7 @@ nvidia:
     - installed: nvidia-smi
 
   symlink:
-    - content: nvidia/display_source
-      target: {{ host.user.paths.bin }}/display_source
-    - content: {{ host.user.paths.bin }}/display_source
-      target: {{ host.user.paths.display_init }}/10-display_source
+    - content: nvidia/display-source
+      target: {{ host.user.paths.bin }}/
+    - content: {{ host.user.paths.bin }}/display-source
+      target: {{ host.user.paths.display_init }}/10-display-source

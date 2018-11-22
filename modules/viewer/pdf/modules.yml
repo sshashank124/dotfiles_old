@@ -9,4 +9,4 @@ zathura:
 
   symlink:
     - content: zathura/pdf
-      target: {{ host.user.paths.bin }}/pdf
+      target: {{ host.user.paths.bin }}/

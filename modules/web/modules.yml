@@ -19,4 +19,4 @@ qutebrowser:
 
   symlink:
     - content: qutebrowser/quickmarks
-      target: {{ host.user.paths.config }}/qutebrowser/quickmarks
+      target: {{ host.user.paths.config }}/qutebrowser/

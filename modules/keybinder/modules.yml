@@ -8,10 +8,10 @@ sxhkd:
       target: {{ host.user.paths.config }}/sxhkd/sxhkdrc
 
   symlink:
-    - content: sxhkd/keybinder
-      target: {{ host.user.paths.bin }}/keybinder
-    - content: {{ host.user.paths.bin }}/keybinder
-      target: {{ host.user.paths.display_init }}/50-keybinder
+    - content: sxhkd/daemon-keybinder
+      target: {{ host.user.paths.bin }}/
+    - content: {{ host.user.paths.bin }}/daemon-keybinder
+      target: {{ host.user.paths.display_init }}/50-daemon-keybinder
 
   run:
     - shell: pkill -USR1 -x sxhkd &

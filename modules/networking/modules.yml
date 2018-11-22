@@ -4,6 +4,6 @@ access_point:
     - installed: haveged
 
   compile:
-    - content: access_point/t.access_point
-      target: {{ host.user.paths.bin }}/access_point
+    - content: access_point/t.access-point
+      target: {{ host.user.paths.bin }}/access-point
       permissions: +x

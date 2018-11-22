@@ -4,12 +4,12 @@ compton:
     - installed: compton
 
   compile:
-    - content: compton/t.daemon_compton
-      target: {{ host.user.paths.bin }}/daemon_compton
+    - content: compton/t.daemon-compton
+      target: {{ host.user.paths.bin }}/daemon-compton
       permissions: +x
 
   symlink:
     - content: compton/compton.conf
-      target: {{ host.user.paths.config }}/compton/compton.conf
-    - content: {{ host.user.paths.bin }}/daemon_compton
-      target: {{ host.user.paths.display_init }}/daemon_compton
+      target: {{ host.user.paths.config }}/compton/
+    - content: {{ host.user.paths.bin }}/daemon-compton
+      target: {{ host.user.paths.display_init }}/20-daemon-compton

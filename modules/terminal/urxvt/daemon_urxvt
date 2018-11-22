@@ -1,3 +1,0 @@
-#!/bin/sh
-xrdb -merge /home/phaqlow/.Xresources
-urxvtd -f -o -q

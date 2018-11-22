@@ -10,5 +10,5 @@ neovim:
       target: {{ host.user.paths.config }}/nvim/init.vim
 
   symlink:
-    - content: neovim/airline_theme.vim
+    - content: neovim/airline-theme.vim
       target: {{ host.user.paths.data }}/nvim/plugged/vim-airline/autoload/airline/themes/dark.vim

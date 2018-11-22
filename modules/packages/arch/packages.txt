@@ -13,7 +13,6 @@ coreutils
 cower
 create_ap
 cryptsetup
-dash
 device-mapper
 dhcpcd
 diffutils
@@ -82,9 +81,7 @@ psmisc
 pulseaudio
 pulseaudio-alsa
 python
-python-numpy
 python-pip
-python-scikit-learn
 python-yaml
 python2
 python36

@@ -10,4 +10,4 @@ Target = *
 [Action]
 Description = Sync packages list
 When = PostTransaction
-Exec = /bin/sh -c '[ -x "{{ env.HOME }}/bin/sync_packages" ] && {{ env.HOME }}/bin/sync_packages'
+Exec = /bin/sh -c '[ -x "{{ host.user.paths.bin }}/sync-packages" ] && {{ host.user.paths.bin }}/sync-packages'
