@@ -15,4 +15,4 @@ state:
 
   symlink:
     - content: state/overlay.png
-      target: {{ host.user.paths.config }}/wallpapers/
+      target: {{ host.user.paths.config }}/wallpapers/overlay.png

@@ -82,6 +82,7 @@ pulseaudio
 pulseaudio-alsa
 python
 python-pip
+python-tensorflow-opt-cuda
 python-yaml
 python2
 python36
@@ -122,7 +123,6 @@ xorg-xkill
 xorg-xrandr
 xorg-xsetroot
 yajl
-youtube-dl
 z
 zathura
 zathura-pdf-poppler

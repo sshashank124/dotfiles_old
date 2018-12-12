@@ -10,6 +10,6 @@ compton:
 
   symlink:
     - content: compton/compton.conf
-      target: {{ host.user.paths.config }}/compton/
+      target: {{ host.user.paths.config }}/compton/compton.conf
     - content: {{ host.user.paths.bin }}/daemon-compton
       target: {{ host.user.paths.display_init }}/20-daemon-compton

@@ -4,7 +4,7 @@ gnupg:
 
   symlink:
     - content: gnupg/gpg-agent.conf
-      target: {{ host.user.paths.home }}/.gnupg/
+      target: {{ host.user.paths.home }}/.gnupg/gpg-agent.conf
 
   run:
     - shell: killall -q gpg-agent || true

@@ -9,7 +9,7 @@ sxhkd:
 
   symlink:
     - content: sxhkd/daemon-keybinder
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/daemon-keybinder
     - content: {{ host.user.paths.bin }}/daemon-keybinder
       target: {{ host.user.paths.display_init }}/50-daemon-keybinder
 

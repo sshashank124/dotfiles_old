@@ -5,6 +5,6 @@ nvidia:
 
   symlink:
     - content: nvidia/display-source
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/display-source
     - content: {{ host.user.paths.bin }}/display-source
       target: {{ host.user.paths.display_init }}/10-display-source

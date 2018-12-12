@@ -10,6 +10,6 @@ rofi:
 
   symlink:
     - content: rofi/launcher
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/launcher
     - content: rofi/selector
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/selector

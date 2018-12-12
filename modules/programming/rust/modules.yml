@@ -14,6 +14,6 @@ rusty_tags:
 
   symlink:
     - content: rusty-tags/cargo-tags
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/cargo-tags
     - content: rusty-tags/config.toml
-      target: {{ host.user.paths.home }}/.rusty-tags/
+      target: {{ host.user.paths.home }}/.rusty-tags/config.toml

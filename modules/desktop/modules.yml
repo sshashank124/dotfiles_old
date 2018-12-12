@@ -21,14 +21,14 @@ xorg:
       target: {{ host.user.paths.display_init }}/20-wallpaper-apply
 
     - content: xorg/xkb-ctrl-caps-swap
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/xkb-ctrl-caps-swap
     - content: {{ host.user.paths.bin }}/xkb-ctrl-caps-swap
       target: {{ host.user.paths.display_init }}/30-xkb-ctrl-caps-swap
 
     - content: xorg/xcursor-default
-      target: {{ host.user.paths.bin }}/
+      target: {{ host.user.paths.bin }}/xcursor-default
     - content: {{ host.user.paths.bin }}/xcursor-default
       target: {{ host.user.paths.display_init }}/20-xcursor-default
 
     - content: xorg/meslo-powerline.ttf
-      target: {{ host.user.paths.data }}/fonts/
+      target: {{ host.user.paths.data }}/fonts/meslo-powerline.ttf
