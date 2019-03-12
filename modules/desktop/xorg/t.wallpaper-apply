@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale --no-fehbg "{{ host.user.paths.config }}/wallpapers/wallpaper.jpg" &
+feh --bg-fill --no-fehbg "{{ host.user.paths.config }}/wallpapers/wallpaper.jpg" &
