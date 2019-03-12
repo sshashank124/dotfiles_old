@@ -7,17 +7,8 @@ modules:
     - name: desktop::xorg
     - name: colorschemes::cyberpunk
     - name: editor::neovim
-    - name: web::qutebrowser
     - name: launcher::rofi
-    - name: sh::zsh
-    - name: gpu::nvidia
+    - name: web::firefox
     - name: wm::bspwm
     - name: keybinder::sxhkd
     - name: terminal::urxvt
-    - name: system::state
-    - name: networking::access_point
-    - name: packages::arch
-    - name: vcs::git
-    - name: viewer/pdf::zathura
-    - name: security::gnupg
-    - name: programming/rust::*
